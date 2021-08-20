@@ -74,7 +74,7 @@ const ChartsWidget7: React.FC<Props> = ({className}) => {
           id='kt_charts_widget_7_chart'
           style={{height: '350px'}}
           className='card-rounded-bottom'
-        ></div>
+        />
         {/* end::Chart */}
       </div>
       {/* end::Body */}

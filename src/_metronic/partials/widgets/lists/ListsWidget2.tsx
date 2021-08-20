@@ -12,7 +12,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bolder text-dark'>Authors</h3>
+        <h3 className='card-title fw-bolder text-dark'>Teachers</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <button
@@ -44,7 +44,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-              Emma Smith
+              Diora Mavlonqulova
             </a>
             <span className='text-muted d-block fw-bold'>Project Manager</span>
           </div>
@@ -61,9 +61,9 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-              Sean Bean
+              Farrux Niyazov
             </a>
-            <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-bold'>Frontend Developer</span>
           </div>
           {/* end::Text */}
         </div>
@@ -78,9 +78,9 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-              Brian Cox
+              Maraim Tuxtasunov
             </a>
-            <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-bold'>Full-mullstack developer</span>
           </div>
           {/* end::Text */}
         </div>
@@ -95,9 +95,9 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-              Francis Mitcham
+              Khurshed Ergashbaev
             </a>
-            <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-bold'>Frontend Developer</span>
           </div>
           {/* end::Text */}
         </div>
@@ -112,9 +112,9 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-              Dan Wilson
+              Abdurashid Zaxurov
             </a>
-            <span className='text-muted d-block fw-bold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-bold'>Graphic Designer</span>
           </div>
           {/* end::Text */}
         </div>

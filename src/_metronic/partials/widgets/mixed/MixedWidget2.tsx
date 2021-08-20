@@ -17,7 +17,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
 
   useEffect(() => {
     if (!chartRef.current) {
-      return
+      return;
     }
 
     const chart = new ApexCharts(
@@ -40,7 +40,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className={`card-header border-0 py-5 bg-${chartColor}`}>
-        <h3 className='card-title fw-bolder text-white'>Sales Statistics</h3>
+        <h3 className='card-title fw-bolder text-white'>Students Statistics</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <button
@@ -66,7 +66,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
         <div
           ref={chartRef}
           className={`mixed-widget-2-chart card-rounded-bottom bg-${chartColor}`}
-        ></div>
+        />
         {/* end::Chart */}
         {/* begin::Stats */}
         <div className='card-p mt-n20 position-relative'>
@@ -74,23 +74,25 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
           <div className='row g-0'>
             {/* begin::Col */}
             <div className='col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7'>
-              <KTSVG
-                path='/media/icons/duotone/Media/Equalizer.svg'
-                className='svg-icon-3x svg-icon-warning d-block my-2'
-              />
+              {/*<KTSVG*/}
+              {/*  path='/media/icons/duotone/Media/Equalizer.svg'*/}
+              {/*  className='svg-icon-3x svg-icon-warning d-block my-2'*/}
+              {/*/>*/}
+              <p className='fs-1 text-warning d-block my-2'>$1.2K</p>
               <a href='#' className='text-warning fw-bold fs-6'>
-                Weekly Sales
+                Total revenue
               </a>
             </div>
             {/* end::Col */}
             {/* begin::Col */}
             <div className='col bg-light-primary px-6 py-8 rounded-2 mb-7'>
-              <KTSVG
-                path='/media/icons/duotone/Communication/Add-user.svg'
-                className='svg-icon-3x svg-icon-primary d-block my-2'
-              />
+              {/*<KTSVG*/}
+              {/*  path='/media/icons/duotone/Communication/Add-user.svg'*/}
+              {/*  className='svg-icon-3x svg-icon-primary d-block my-2'*/}
+              {/*/>*/}
+              <p className='fs-1 text-primary d-block my-2'>145</p>
               <a href='#' className='text-primary fw-bold fs-6'>
-                New Users
+                Total students
               </a>
             </div>
             {/* end::Col */}
@@ -100,23 +102,25 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
           <div className='row g-0'>
             {/* begin::Col */}
             <div className='col bg-light-danger px-6 py-8 rounded-2 me-7'>
-              <KTSVG
-                path='/media/icons/duotone/Design/Layers.svg'
-                className='svg-icon-3x svg-icon-danger d-block my-2'
-              />
+              {/*<KTSVG*/}
+              {/*  path='/media/icons/duotone/Design/Layers.svg'*/}
+              {/*  className='svg-icon-3x svg-icon-danger d-block my-2'*/}
+              {/*/>*/}
+              <p className='fs-1 text-danger d-block my-2'>6</p>
               <a href='#' className='text-danger fw-bold fs-6 mt-2'>
-                Item Orders
+                Number of courses
               </a>
             </div>
             {/* end::Col */}
             {/* begin::Col */}
             <div className='col bg-light-success px-6 py-8 rounded-2'>
-              <KTSVG
-                path='/media/icons/duotone/Communication/Urgent-mail.svg'
-                className='svg-icon-3x svg-icon-success d-block my-2'
-              />
+              {/*<KTSVG*/}
+              {/*  path='/media/icons/duotone/Communication/Urgent-mail.svg'*/}
+              {/*  className='svg-icon-3x svg-icon-success d-block my-2'*/}
+              {/*/>*/}
+              <p className='fs-1 text-success d-block my-2'>25</p>
               <a href='#' className='text-success fw-bold fs-6 mt-2'>
-                Bug Reports
+                Total left / graduated students
               </a>
             </div>
             {/* end::Col */}
@@ -142,7 +146,7 @@ const chartOptions = (
   return {
     series: [
       {
-        name: 'Net Profit',
+        name: 'Monthly total:',
         data: [30, 45, 32, 70, 40, 40, 40],
       },
     ],
@@ -249,7 +253,7 @@ const chartOptions = (
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' students'
         },
       },
       marker: {

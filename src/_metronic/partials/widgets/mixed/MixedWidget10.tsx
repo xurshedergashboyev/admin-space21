@@ -39,19 +39,17 @@ const MixedWidget10: React.FC<Props> = ({className, chartColor, chartHeight}) =>
           <div className='d-flex flex-stack flex-wrap'>
             <div className='me-2'>
               <a href='#' className='text-dark text-hover-primary fw-bolder fs-3'>
-                Generate Reports
+                Monthly incoming | leaving students
               </a>
-
-              <div className='text-muted fs-7 fw-bold'>Finance and accounting reports</div>
+              <div className='text-muted fs-7 fw-bold'>Total number reports</div>
             </div>
-
-            <div className={`fw-bolder fs-3 text-${chartColor}`}>$24,500</div>
+            <div className={`fw-bolder fs-3 text-${chartColor}`}>120</div>
           </div>
         </div>
         {/* end::Stats */}
 
         {/* begin::Chart */}
-        <div ref={chartRef} className='mixed-widget-7-chart card-rounded-bottom'></div>
+        <div ref={chartRef} className='mixed-widget-7-chart card-rounded-bottom' />
         {/* end::Chart */}
       </div>
       {/* end::Body */}
@@ -63,24 +61,28 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   const labelColor = getCSSVariableValue('--bs-gray-800')
   const strokeColor = getCSSVariableValue('--bs-gray-300')
   const baseColor = getCSSVariableValue('--bs-' + chartColor)
-  const lightColor = getCSSVariableValue('--bs-light-' + chartColor)
+  const lightColor = getCSSVariableValue('--bs-danger')
 
   return {
     series: [
       {
-        name: 'Net Profit',
+        name: 'Incoming',
         data: [15, 25, 15, 40, 20, 50],
+      },
+      {
+        name: 'Leaving',
+        data: [35, 23, 56, 50, 12, 45],
       },
     ],
     chart: {
       fontFamily: 'inherit',
-      type: 'area',
+      type: 'line',
       height: chartHeight,
       toolbar: {
         show: false,
       },
       zoom: {
-        enabled: false,
+        enabled: true,
       },
       sparkline: {
         enabled: true,
@@ -101,7 +103,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
       curve: 'smooth',
       show: true,
       width: 3,
-      colors: [baseColor],
+      colors: [baseColor, lightColor],
     },
     xaxis: {
       categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
@@ -109,17 +111,17 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
         show: false,
       },
       axisTicks: {
-        show: false,
+        show: true,
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
           fontSize: '12px',
         },
       },
       crosshairs: {
-        show: false,
+        show: true,
         position: 'front',
         stroke: {
           color: strokeColor,
@@ -128,7 +130,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
         },
       },
       tooltip: {
-        enabled: false,
+        enabled: true,
       },
     },
     yaxis: {
@@ -168,15 +170,15 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
         fontSize: '12px',
       },
       y: {
-        formatter: function (val) {
-          return '$' + val + ' thousands'
+        formatter: function(val) {
+          return val + ' students'
         },
       },
     },
-    colors: [lightColor],
+    colors: [baseColor, lightColor],
     markers: {
-      colors: [lightColor],
-      strokeColors: [baseColor],
+      colors: [baseColor, lightColor],
+      strokeColors: [baseColor, lightColor],
       strokeWidth: 3,
     },
   }

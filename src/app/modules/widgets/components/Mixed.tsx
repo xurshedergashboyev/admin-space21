@@ -367,6 +367,7 @@ const Mixed: FC = () => {
             className='card-xl-stretch mb-xl-8'
             chartColor='info'
             chartHeight='200px'
+            secondChartColor={'danger'}
           />
         </div>
         {/* end::Col */}
@@ -377,6 +378,7 @@ const Mixed: FC = () => {
             className='card-xl-stretch mb-xl-8'
             chartColor='warning'
             chartHeight='200px'
+            secondChartColor={'danger'}
           />
         </div>
         {/* end::Col */}
@@ -387,6 +389,7 @@ const Mixed: FC = () => {
             className='card-xl-stretch mb-xl-8'
             chartColor='primary'
             chartHeight='200px'
+            secondChartColor={'danger'}
           />
         </div>
         {/* end::Col */}

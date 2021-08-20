@@ -37,8 +37,8 @@ const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => 
       {/* begin::Beader */}
       <div className='card-header border-0 py-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Action Needed</span>
-          <span className='text-muted fw-bold fs-7'>Complete your profile setup</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Students by category</span>
+          <span className='text-muted fw-bold fs-7'>Total number of students by category in August</span>
         </h3>
 
         <div className='card-toolbar'>
@@ -64,21 +64,21 @@ const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => 
       {/* begin::Body */}
       <div className='card-body d-flex flex-column'>
         <div className='flex-grow-1'>
-          <div ref={chartRef} className='mixed-widget-4-chart'></div>
+          <div ref={chartRef} className='mixed-widget-4-chart'/>
         </div>
 
-        <div className='pt-5'>
-          <p className='text-center fs-6 pb-5 '>
-            <span className='badge badge-light-danger fs-8'>Notes:</span>&nbsp; Current sprint
-            requires stakeholders
-            <br />
-            to approve newly amended policies
-          </p>
+        {/*<div className='pt-5'>*/}
+        {/*  <p className='text-center fs-6 pb-5 '>*/}
+        {/*    <span className='badge badge-light-danger fs-8'>Notes:</span>&nbsp; Current sprint*/}
+        {/*    requires stakeholders*/}
+        {/*    <br />*/}
+        {/*    to approve newly amended policies*/}
+        {/*  </p>*/}
 
-          <a href='#' className={`btn btn-${chartColor} w-100 py-3`}>
-            Take Action
-          </a>
-        </div>
+        {/*  <a href='#' className={`btn btn-${chartColor} w-100 py-3`}>*/}
+        {/*    Take Action*/}
+        {/*  </a>*/}
+        {/*</div>*/}
       </div>
       {/* end::Body */}
     </div>
@@ -91,45 +91,57 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   const labelColor = getCSSVariableValue('--bs-gray-700')
 
   return {
-    series: [74],
+    series: [78, 45, 12, 15],
+    labels: ['English', 'Frontend', 'IELTS', 'Design'],
     chart: {
       fontFamily: 'inherit',
       height: chartHeight,
-      type: 'radialBar',
+      type: 'donut',
     },
-    plotOptions: {
-      radialBar: {
-        hollow: {
-          margin: 0,
-          size: '65%',
-        },
-        dataLabels: {
-          name: {
-            show: false,
-            fontWeight: '700',
-          },
-          value: {
-            color: labelColor,
-            fontSize: '30px',
-            fontWeight: '700',
-            offsetY: 12,
-            show: true,
-            formatter: function (val) {
-              return val + '%'
-            },
-          },
-        },
-        track: {
-          background: lightColor,
-          strokeWidth: '100%',
-        },
-      },
+    dataLabels: {
+      enabled: false
     },
-    colors: [baseColor],
-    stroke: {
-      lineCap: 'round',
-    },
-    labels: ['Progress'],
+    tooltip: {
+      y: {
+        formatter(val: number ): string {
+          return `${val} students`
+        }
+      }
+    }
+    //   plotOptions: {
+    //     radialBar: {
+    //       hollow: {
+    //         margin: 0,
+    //         size: '65%',
+    //       },
+    //       dataLabels: {
+    //         name: {
+    //           show: false,
+    //           fontWeight: '700',
+    //         },
+    //         value: {
+    //           color: labelColor,
+    //           fontSize: '30px',
+    //           fontWeight: '700',
+    //           offsetY: 12,
+    //           show: true,
+    //           formatter: function (val) {
+    //             return val + '%'
+    //           },
+    //         },
+    //       },
+    //       track: {
+    //         background: lightColor,
+    //         strokeWidth: '100%',
+    //       },
+    //     },
+    //   },
+    //   colors: [baseColor],
+    //   stroke: {
+    //     lineCap: 'round',
+    //   },
+    //   labels: ['Progress'],
+    // }
   }
 }
 

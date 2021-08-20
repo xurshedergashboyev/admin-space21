@@ -9,12 +9,12 @@ import {
   ListsWidget2,
   ListsWidget3,
   ListsWidget4,
-  ListsWidget5,
   ListsWidget6,
   TablesWidget5,
-  TablesWidget10,
   MixedWidget8,
+  MixedWidget7,
 } from '../../../_metronic/partials/widgets'
+import {TotalRevenueByCourses} from '../../../_metronic/partials/widgets/mixed/TotalRevenueByCourses'
 
 const DashboardPage: FC = () => (
   <>
@@ -29,18 +29,20 @@ const DashboardPage: FC = () => (
         />
       </div>
       <div className='col-xxl-4'>
-        <ListsWidget5 className='card-xxl-stretch' />
+        {/*<ListsWidget5 className='card-xxl-stretch' />*/}
+        <MixedWidget7 className={"card-xl-stretch"} chartColor={"primary"} chartHeight={"200px"} />
       </div>
       <div className='col-xxl-4'>
         <MixedWidget10
           className='card-xxl-stretch-50 mb-5 mb-xl-8'
-          chartColor='primary'
+          chartColor='success'
           chartHeight='150px'
         />
         <MixedWidget11
           className='card-xxl-stretch-50 mb-5 mb-xl-8'
-          chartColor='primary'
+          chartColor='success'
           chartHeight='175px'
+          secondChartColor='danger'
         />
       </div>
     </div>
@@ -52,7 +54,7 @@ const DashboardPage: FC = () => (
         <ListsWidget3 className='card-xxl-stretch mb-xl-3' />
       </div>
       <div className='col-xl-8'>
-        <TablesWidget10 className='card-xxl-stretch mb-5 mb-xl-8' />
+        <TotalRevenueByCourses chartColor={"primary"} chartHeight={"200px"} className='card-xxl-stretch mb-5 mb-xl-8' />
       </div>
     </div>
     {/* end::Row */}

@@ -6,10 +6,11 @@ import {getCSSVariableValue} from '../../../assets/ts/_utils'
 type Props = {
   className: string
   chartColor: string
-  chartHeight: string
+  chartHeight: string,
+  secondChartColor: string
 }
 
-const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight}) => {
+const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight, secondChartColor}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight}) =>
       return
     }
 
-    const chart = new ApexCharts(chartRef.current, chartOptions(chartColor, chartHeight))
+    const chart = new ApexCharts(chartRef.current, chartOptions(chartColor, chartHeight, secondChartColor))
     if (chart) {
       chart.render()
     }
@@ -37,37 +38,37 @@ const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight}) =>
         {/* begin::Hidden */}
         <div className='d-flex flex-stack flex-wrap flex-grow-1 px-9 pt-9 pb-3'>
           <div className='me-2'>
-            <span className='fw-bolder text-gray-800 d-block fs-3'>Sales</span>
+            <span className='fw-bolder text-gray-800 d-block fs-3'>Monthly graduated | left students</span>
 
-            <span className='text-gray-400 fw-bold'>Oct 8 - Oct 26 2021</span>
+            <span className='text-gray-400 fw-bold'>August 01 - August 20 2021</span>
           </div>
 
-          <div className={`fw-bolder fs-3 text-${chartColor}`}>$15,300</div>
+          <div className={`fw-bolder fs-3 text-${chartColor}`}>75</div>
         </div>
         {/* end::Hidden */}
 
         {/* begin::Chart */}
-        <div ref={chartRef} className='mixed-widget-10-chart'></div>
+        <div ref={chartRef} className='mixed-widget-10-chart'/>
         {/* end::Chart */}
       </div>
     </div>
   )
 }
 
-const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
+const chartOptions = (chartColor: string, chartHeight: string, secondChartColor: string): ApexOptions => {
   const labelColor = getCSSVariableValue('--bs-gray-500')
   const borderColor = getCSSVariableValue('--bs-gray-200')
-  const secondaryColor = getCSSVariableValue('--bs-gray-300')
+  const secondaryColor = getCSSVariableValue('--bs-danger')
   const baseColor = getCSSVariableValue('--bs-' + chartColor)
 
   return {
     series: [
       {
-        name: 'Net Profit',
+        name: 'Graduated',
         data: [50, 60, 70, 80, 60, 50, 70, 60],
       },
       {
-        name: 'Revenue',
+        name: 'Left',
         data: [50, 60, 70, 80, 60, 50, 70, 60],
       },
     ],
@@ -107,7 +108,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
       },
       labels: {
         style: {
-          colors: labelColor,
+          colors: chartColor,
           fontSize: '12px',
         },
       },
@@ -115,7 +116,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
     yaxis: {
       labels: {
         style: {
-          colors: labelColor,
+          colors: chartColor,
           fontSize: '12px',
         },
       },
@@ -150,7 +151,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' revenue'
+          return val + ' students'
         },
       },
     },
