@@ -9,7 +9,7 @@ import {StudentsOverview} from './components/StudentsOverview'
 const accountBreadCrumbs: Array<PageLink> = [
   {
     title: 'Account',
-    path: '/crafted/account/overview',
+    path: '/crafted/account/teachers/overview',
     isSeparator: false,
     isActive: false,
   },
@@ -21,7 +21,7 @@ const accountBreadCrumbs: Array<PageLink> = [
   },
 ]
 
-const AccountPage: React.FC = () => {
+const StudentsAccountPage: React.FC = () => {
   return (
     <>
       <AccountHeader />
@@ -30,20 +30,20 @@ const AccountPage: React.FC = () => {
         {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>*/}
         {/*  <TeachersOverview />*/}
         {/*</Route>*/}
-        <Route path='/crafted/account/overview'>
+        <Route path='/crafted/account/teachers/overview'>
           <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
           <StudentsOverview />
         </Route>
 
-        <Route path="/crafted/account/settings">
+        <Route path="/crafted/account/teachers/settings">
           <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
           <Settings />
         </Route>
         <Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />
-        <Redirect to='/crafted/account/overview' />
+        <Redirect to='/crafted/account/teachers/overview' />
       </Switch>
     </>
   )
 }
 
-export default AccountPage
+export default StudentsAccountPage
