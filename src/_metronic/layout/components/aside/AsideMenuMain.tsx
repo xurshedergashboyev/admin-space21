@@ -78,7 +78,7 @@ export function AsideMenuMain() {
         icon='/media/icons/duotone/General/Folder.svg'
         fontIcon='bi-person'
       >
-        <AsideMenuItem to='/crafted/account/courses/overview' title='Overview' hasBullet={true} />
+        <AsideMenuItem to='/crafted/courses/overview' title='Overview' hasBullet={true} />
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
         to='/error'

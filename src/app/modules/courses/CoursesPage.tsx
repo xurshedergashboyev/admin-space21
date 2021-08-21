@@ -6,7 +6,7 @@ export default function Coursespage () {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Courses',
-      path: '/crafted/pages/courses/overview',
+      path: '/crafted/courses/overview',
       isSeparator: false,
       isActive: false,
     },
