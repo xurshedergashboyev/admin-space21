@@ -39,8 +39,8 @@ const StudentsAccountPage: React.FC = () => {
           <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
           <Settings />
         </Route>
-        <Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />
-        <Redirect to='/crafted/account/students/overview' />
+        {/*<Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />*/}
+        {/*<Redirect to='/crafted/account/students/overview' />*/}
       </Switch>
     </>
   )
