@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 
 export default function Coursespage () {
@@ -20,9 +20,12 @@ export default function Coursespage () {
 
   return (
     <>
-      <Route path="/crafted/courses">
-        <PageTitle breadcrumbs={profileBreadCrumbs}>Hello</PageTitle>
-      </Route>
+      <Switch>
+        <Route path="/crafted/courses">
+          <PageTitle breadcrumbs={profileBreadCrumbs}>Hello</PageTitle>
+          <h1>Hello</h1>
+        </Route>
+      </Switch>
     </>
   )
 }
