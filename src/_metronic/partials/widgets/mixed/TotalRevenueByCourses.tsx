@@ -27,7 +27,7 @@ const TotalRevenueByCourses: FC<Props> = ({className, chartColor, chartHeight}) 
         chart.destroy()
       }
     }
-  }, [pieChartRef])
+  }, [chartHeight, chartColor])
 
   return (
     <div className={`card ${className}`}>
