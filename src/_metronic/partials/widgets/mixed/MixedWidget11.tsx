@@ -56,7 +56,7 @@ const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight, sec
 }
 
 const chartOptions = (chartColor: string, chartHeight: string, secondChartColor: string): ApexOptions => {
-  const labelColor = getCSSVariableValue('--bs-gray-500')
+  // const labelColor = getCSSVariableValue('--bs-gray-500')
   const borderColor = getCSSVariableValue('--bs-gray-200')
   const secondaryColor = getCSSVariableValue('--bs-danger')
   const baseColor = getCSSVariableValue('--bs-' + chartColor)

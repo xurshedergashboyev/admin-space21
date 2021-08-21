@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, FC} from 'react';
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTSVG} from '../../../helpers'
-import {getCSSVariableValue} from '../../../assets/ts/_utils'
+// import {getCSSVariableValue} from '../../../assets/ts/_utils'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
 type Props = {
@@ -71,7 +71,7 @@ const TotalRevenueByCourses: FC<Props> = ({className, chartColor, chartHeight}) 
             to approve newly amended policies
           </p>
 
-          <a href='#' className={`btn btn-${chartColor} w-100 py-3`}>
+          <a href='/' className={`btn btn-${chartColor} w-100 py-3`}>
             Take Action
           </a>
         </div>

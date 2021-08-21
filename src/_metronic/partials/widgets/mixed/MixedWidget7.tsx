@@ -86,9 +86,9 @@ const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => 
 }
 
 const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
-  const baseColor = getCSSVariableValue('--bs-' + chartColor)
-  const lightColor = getCSSVariableValue('--bs-light-' + chartColor)
-  const labelColor = getCSSVariableValue('--bs-gray-700')
+  // const baseColor = getCSSVariableValue('--bs-' + chartColor)
+  // const lightColor = getCSSVariableValue('--bs-light-' + chartColor)
+  // const labelColor = getCSSVariableValue('--bs-gray-700')
 
   return {
     series: [78, 45, 12, 15],

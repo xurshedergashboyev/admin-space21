@@ -3,7 +3,6 @@ import {Redirect, Route, Switch} from 'react-router-dom'
 import {FallbackView} from '../../_metronic/partials'
 import {DashboardWrapper} from '../pages/dashboard/DashboardWrapper'
 import {MenuTestPage} from '../pages/MenuTestPage'
-import Coursespage from '../modules/courses/CoursesPage'
 
 export function PrivateRoutes() {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
