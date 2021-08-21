@@ -33,7 +33,7 @@ const AsideMenuItemWithSub: React.FC<Props> = ({
       <span className='menu-link'>
         {hasBullet && (
           <span className='menu-bullet'>
-            <span className='bullet bullet-dot'></span>
+            <span className='bullet bullet-dot'/>
           </span>
         )}
         {icon && aside.menuIcon === 'svg' && (
@@ -41,9 +41,9 @@ const AsideMenuItemWithSub: React.FC<Props> = ({
             <KTSVG path={icon} className='svg-icon-2' />
           </span>
         )}
-        {fontIcon && aside.menuIcon === 'font' && <i className={clsx('bi fs-3', fontIcon)}></i>}
+        {fontIcon && aside.menuIcon === 'font' && <i className={clsx('bi fs-3', fontIcon)}/>}
         <span className='menu-title'>{title}</span>
-        <span className='menu-arrow'></span>
+        <span className='menu-arrow'/>
       </span>
       <div className={clsx('menu-sub menu-sub-accordion', {'menu-active-bg': isActive})}>
         {children}
