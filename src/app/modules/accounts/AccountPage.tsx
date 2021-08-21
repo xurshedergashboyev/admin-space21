@@ -9,7 +9,7 @@ import {StudentsOverview} from './components/StudentsOverview'
 const accountBreadCrumbs: Array<PageLink> = [
   {
     title: 'Account',
-    path: '/crafted/account/teachers/overview',
+    path: '/crafted/account/overview',
     isSeparator: false,
     isActive: false,
   },
