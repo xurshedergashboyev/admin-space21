@@ -47,7 +47,7 @@ ReactDOM.render(
     <Provider store={store}>
       {/* Asynchronously persist redux stores and show `SplashScreen` while it's loading. */}
       <PersistGate persistor={persistor} loading={<div>Loading...</div>}>
-        <App basename={PUBLIC_URL} />
+        <App  />
       </PersistGate>
     </Provider>
   </MetronicI18nProvider>,

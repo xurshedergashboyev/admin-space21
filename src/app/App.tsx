@@ -5,14 +5,14 @@ import {LayoutProvider, LayoutSplashScreen} from '../_metronic/layout/core'
 import AuthInit from './modules/auth/redux/AuthInit'
 import {Routes} from './routing/Routes'
 
-type Props = {
-  basename: string
-}
+// type Props = {
+//   basename: string
+// }
 
-const App: React.FC<Props> = ({basename}) => {
+const App: React.FC = () => {
   return (
     <Suspense fallback={<LayoutSplashScreen />}>
-      <BrowserRouter basename={basename}>
+      <BrowserRouter >
         <I18nProvider>
           <LayoutProvider>
             <AuthInit>
