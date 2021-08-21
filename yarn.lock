@@ -3876,6 +3876,11 @@
   "resolved" "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz"
   "version" "7.2.0"
 
+"commander@~2.2.0":
+  "integrity" "sha1-F1rUuTF/P/YV8gHB5XIk9Vo+kd8="
+  "resolved" "https://registry.npmjs.org/commander/-/commander-2.2.0.tgz"
+  "version" "2.2.0"
+
 "common-tags@^1.8.0":
   "integrity" "sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw=="
   "resolved" "https://registry.npmjs.org/common-tags/-/common-tags-1.8.0.tgz"
@@ -10611,6 +10616,13 @@
   "integrity" "sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA=="
   "resolved" "https://registry.npmjs.org/rsvp/-/rsvp-4.8.5.tgz"
   "version" "4.8.5"
+
+"rtl@^0.1.18":
+  "integrity" "sha1-TxYSBjls1srWauRkjR6MIdssZUo="
+  "resolved" "https://registry.npmjs.org/rtl/-/rtl-0.1.18.tgz"
+  "version" "0.1.18"
+  dependencies:
+    "commander" "~2.2.0"
 
 "run-parallel@^1.1.9":
   "integrity" "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA=="

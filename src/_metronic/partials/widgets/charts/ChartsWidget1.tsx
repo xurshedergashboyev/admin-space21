@@ -37,9 +37,9 @@ const ChartsWidget1: React.FC<Props> = ({className}) => {
       <div className='card-header border-0 pt-5'>
         {/* begin::Title */}
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Recent Statistics</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Monthly Statistics</span>
 
-          <span className='text-muted fw-bold fs-7'>More than 400 new members</span>
+          <span className='text-muted fw-bold fs-7'>Success rate</span>
         </h3>
         {/* end::Title */}
 
@@ -81,17 +81,17 @@ export {ChartsWidget1}
 function getChartOptions(height: number): ApexOptions {
   const labelColor = getCSSVariableValue('--bs-gray-500')
   const borderColor = getCSSVariableValue('--bs-gray-200')
-  const baseColor = getCSSVariableValue('--bs-primary')
-  const secondaryColor = getCSSVariableValue('--bs-gray-300')
+  const baseColor = getCSSVariableValue('--bs-success')
+  const secondaryColor = getCSSVariableValue('--bs-warning')
 
   return {
     series: [
       {
-        name: 'Net Profit',
+        name: 'Payment',
         data: [44, 55, 57, 56, 61, 58],
       },
       {
-        name: 'Revenue',
+        name: 'Success rate',
         data: [76, 85, 101, 98, 87, 105],
       },
     ],
@@ -122,7 +122,7 @@ function getChartOptions(height: number): ApexOptions {
       colors: ['transparent'],
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      categories: ['Apr', 'May', 'Jun', 'Jul', 'August', 'September'],
       axisBorder: {
         show: false,
       },
@@ -174,7 +174,7 @@ function getChartOptions(height: number): ApexOptions {
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' sums'
         },
       },
     },

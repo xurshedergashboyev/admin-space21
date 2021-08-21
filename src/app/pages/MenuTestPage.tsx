@@ -7,7 +7,7 @@ const MenuTestPage: FC = () => {
   return (
     <div className='row'>
       <div className='card card-custom'>
-        <div className='card-body p-9'>
+        <div className='card-body p-9'>x
           <div className='d-flex align-items-stretch mb-20'>
             <div
               className='header-menu align-items-stretch'

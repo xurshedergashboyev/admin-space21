@@ -13,8 +13,8 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Tasks Overview</span>
-          <span className='text-muted fw-bold fs-7'>Pending 10 tasks</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Homeworks</span>
+          <span className='text-muted fw-bold fs-7'/>
         </h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
@@ -46,10 +46,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
             {/* begin::Table head */}
             <thead>
               <tr>
-                <th className='p-0 w-50px'></th>
-                <th className='p-0 min-w-200px'></th>
-                <th className='p-0 min-w-100px'></th>
-                <th className='p-0 min-w-40px'></th>
+                <th className='p-0 w-50px'/>
+                <th className='p-0 min-w-200px'/>
+                <th className='p-0 min-w-100px'/>
+                <th className='p-0 min-w-40px'/>
               </tr>
             </thead>
             {/* end::Table head */}
@@ -69,7 +69,7 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                 </th>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
-                    Top Authors
+                    Filter & reduce arrays method
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Successful Fellas</span>
                 </td>
@@ -80,10 +80,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
-                        className='progress-bar bg-primary'
+                        className='progress-bar bg-warning'
                         role='progressbar'
                         style={{width: '70%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -110,7 +110,7 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                 </th>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
-                    Popular Authors
+                    JS Functions
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Most Successful</span>
                 </td>
@@ -121,10 +121,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
-                        className='progress-bar bg-primary'
+                        className='progress-bar bg-danger'
                         role='progressbar'
                         style={{width: '50%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -151,7 +151,7 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                 </th>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
-                    New Users
+                    CSS Advanced
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Awesome Users</span>
                 </td>
@@ -162,10 +162,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
-                        className='progress-bar bg-primary'
+                        className='progress-bar bg-success'
                         role='progressbar'
                         style={{width: '80%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -192,7 +192,7 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                 </th>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
-                    Active Customers
+                    JS Variables
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Best Customers</span>
                 </td>
@@ -203,10 +203,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
-                        className='progress-bar bg-primary'
+                        className='progress-bar bg-success'
                         role='progressbar'
                         style={{width: '90%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -233,7 +233,7 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                 </th>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary mb-1 fs-6'>
-                    Bestseller Theme
+                    JS Data-types
                   </a>
                   <span className='text-muted fw-bold d-block fs-7'>Amazing Templates</span>
                 </td>
@@ -244,10 +244,10 @@ const TablesWidget1: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
-                        className='progress-bar bg-primary'
+                        className='progress-bar bg-warning'
                         role='progressbar'
                         style={{width: '70%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>

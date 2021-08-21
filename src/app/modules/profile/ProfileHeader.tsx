@@ -15,7 +15,7 @@ const ProfileHeader: React.FC = () => {
           <div className='me-7 mb-4'>
             <div className='symbol symbol-100px symbol-lg-160px symbol-fixed position-relative'>
               <img src={toAbsoluteUrl('/media/avatars/150-2.jpg')} alt='Metornic' />
-              <div className='position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-white h-20px w-20px'></div>
+              <div className='position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-white h-20px w-20px'/>
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const ProfileHeader: React.FC = () => {
               <div className='d-flex flex-column'>
                 <div className='d-flex align-items-center mb-2'>
                   <a href='#' className='text-gray-800 text-hover-primary fs-2 fw-bolder me-1'>
-                    Max Smith
+                    Dilovar Mavlonqulov
                   </a>
                   <a href='#'>
                     <KTSVG
@@ -43,7 +43,7 @@ const ProfileHeader: React.FC = () => {
                       path='/media/icons/duotone/General/User.svg'
                       className='svg-icon-4 me-1'
                     />
-                    Developer
+                    Frontend course student
                   </a>
                   <a
                     href='#'
@@ -53,7 +53,7 @@ const ProfileHeader: React.FC = () => {
                       path='/media/icons/duotone/Map/Marker1.svg'
                       className='svg-icon-4 me-1'
                     />
-                    SF, Bay Area
+                    Tashkent, Angren Samaniy
                   </a>
                   <a
                     href='#'
@@ -63,22 +63,21 @@ const ProfileHeader: React.FC = () => {
                       path='/media/icons/duotone/Communication/Mail-at.svg'
                       className='svg-icon-4 me-1'
                     />
-                    max@kt.com
+                    dilovardev@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className='d-flex my-4'>
-                <a href='#' className='btn btn-sm btn-light me-2' id='kt_user_follow_button'>
+                <a href='#' className='btn btn-sm btn-danger me-2' id='kt_user_follow_button'>
                   <KTSVG
                     path='/media/icons/duotone/Navigation/Double-check.svg'
                     className='svg-icon-3 d-none'
                   />
-
-                  <span className='indicator-label'>Follow</span>
+                  <span className='indicator-label'>Delete</span>
                   <span className='indicator-progress'>
                     Please wait...
-                    <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
+                    <span className='spinner-border spinner-border-sm align-middle ms-2'/>
                   </span>
                 </a>
                 <a
@@ -87,7 +86,7 @@ const ProfileHeader: React.FC = () => {
                   data-bs-toggle='modal'
                   data-bs-target='#kt_modal_offer_a_deal'
                 >
-                  Hire Me
+                  Graduate
                 </a>
                 <div className='me-0'>
                   <button
@@ -96,7 +95,7 @@ const ProfileHeader: React.FC = () => {
                     data-kt-menu-placement='bottom-end'
                     data-kt-menu-flip='top-end'
                   >
-                    <i className='bi bi-three-dots fs-3'></i>
+                    <i className='bi bi-three-dots fs-3'/>
                   </button>
                   <Dropdown1 />
                 </div>
@@ -112,10 +111,10 @@ const ProfileHeader: React.FC = () => {
                         path='/media/icons/duotone/Navigation/Arrow-up.svg'
                         className='svg-icon-3 svg-icon-success me-2'
                       />
-                      <div className='fs-2 fw-bolder'>4500$</div>
+                      <div className='fs-2 fw-bolder'>$250</div>
                     </div>
 
-                    <div className='fw-bold fs-6 text-gray-400'>Earnings</div>
+                    <div className='fw-bold fs-6 text-gray-400'>Overall Payments</div>
                   </div>
 
                   <div className='border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3'>
@@ -124,7 +123,7 @@ const ProfileHeader: React.FC = () => {
                         path='/media/icons/duotone/Navigation/Arrow-down.svg'
                         className='svg-icon-3 svg-icon-danger me-2'
                       />
-                      <div className='fs-2 fw-bolder'>75</div>
+                      <div className='fs-2 fw-bolder'>3</div>
                     </div>
 
                     <div className='fw-bold fs-6 text-gray-400'>Projects</div>
@@ -147,14 +146,14 @@ const ProfileHeader: React.FC = () => {
               <div className='d-flex align-items-center w-200px w-sm-300px flex-column mt-3'>
                 <div className='d-flex justify-content-between w-100 mt-auto mb-2'>
                   <span className='fw-bold fs-6 text-gray-400'>Profile Compleation</span>
-                  <span className='fw-bolder fs-6'>50%</span>
+                  <span className='fw-bolder fs-6'>73%</span>
                 </div>
                 <div className='h-5px mx-3 w-100 bg-light mb-3'>
                   <div
                     className='bg-success rounded h-5px'
                     role='progressbar'
-                    style={{width: '50%'}}
-                  ></div>
+                    style={{width: '73%'}}
+                  />
                 </div>
               </div>
             </div>

@@ -1,14 +1,13 @@
 import React from 'react'
 import {Redirect, Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
-import {Overview} from './components/Overview'
-import {Settings} from './components/settings/Settings'
-import {AccountHeader} from './AccountHeader'
+import {TeachersOverview} from './components/TeachersOverview'
+import {StudentAccountHeader} from './StudentAccountHeader'
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
     title: 'Account',
-    path: '/crafted/account/overview',
+    path: '/crafted/account/teachers/overview',
     isSeparator: false,
     isActive: false,
   },
@@ -20,22 +19,28 @@ const accountBreadCrumbs: Array<PageLink> = [
   },
 ]
 
+
+
 const AccountPage: React.FC = () => {
   return (
     <>
-      <AccountHeader />
       <Switch>
-        <Route path='/crafted/account/overview'>
-          <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
-          <Overview />
+        <Route path='/crafted/account/teachers/overview'>
+          <StudentAccountHeader />
+          <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>
+          <TeachersOverview />
         </Route>
-        <Route path='/crafted/account/settings'>
-          <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
-          <Settings />
-        </Route>
+        {/*<Route path='/crafted/account/settings'>*/}
+        {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>*/}
+        {/*  <Settings />*/}
+        {/*</Route>*/}
 
-        <Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />
-        <Redirect to='/crafted/account/overview' />
+        <Route path="/crafted/account/students/overview">
+          <StudentAccountHeader />
+          <PageTitle breadcrumbs={accountBreadCrumbs}>Students</PageTitle>
+        </Route>
+        <Redirect from='/crafted/account' exact={true} to='/crafted/account/teachers/overview' />
+        <Redirect to='/crafted/account/teachers/overview' />
       </Switch>
     </>
   )
