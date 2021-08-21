@@ -22,7 +22,7 @@ export default function Coursespage () {
     <>
       <Switch>
         <Route path="/crafted/courses">
-          <PageTitle breadcrumbs={profileBreadCrumbs}>Hello</PageTitle>
+          <PageTitle breadcrumbs={profileBreadCrumbs}>Courses</PageTitle>
           <h1>Hello</h1>
         </Route>
       </Switch>
