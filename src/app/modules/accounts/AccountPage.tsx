@@ -2,7 +2,9 @@ import React from 'react'
 import {Redirect, Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 import {TeachersOverview} from './components/TeachersOverview'
-import {StudentAccountHeader} from './StudentAccountHeader'
+import {Settings} from './components/settings/Settings'
+import {AccountHeader} from './AccountHeader'
+import {StudentsOverview} from './components/StudentsOverview'
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
@@ -19,28 +21,26 @@ const accountBreadCrumbs: Array<PageLink> = [
   },
 ]
 
-
-
 const AccountPage: React.FC = () => {
   return (
     <>
+      <AccountHeader />
       <Switch>
-        <Route path='/crafted/account/teachers/overview'>
-          <StudentAccountHeader />
-          <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>
-          <TeachersOverview />
-        </Route>
-        {/*<Route path='/crafted/account/settings'>*/}
-        {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>*/}
-        {/*  <Settings />*/}
+        {/*<Route path='/crafted/account/teachers/overview'>*/}
+        {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>*/}
+        {/*  <TeachersOverview />*/}
         {/*</Route>*/}
-
-        <Route path="/crafted/account/students/overview">
-          <StudentAccountHeader />
-          <PageTitle breadcrumbs={accountBreadCrumbs}>Students</PageTitle>
+        <Route path='/crafted/account/overview'>
+          <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
+          <StudentsOverview />
         </Route>
-        <Redirect from='/crafted/account' exact={true} to='/crafted/account/teachers/overview' />
-        <Redirect to='/crafted/account/teachers/overview' />
+
+        <Route path="/crafted/account/settings">
+          <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
+          <Settings />
+        </Route>
+        <Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />
+        <Redirect to='/crafted/account/overview' />
       </Switch>
     </>
   )

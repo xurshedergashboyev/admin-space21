@@ -9,7 +9,7 @@ import {
   TablesWidget5,
 } from '../../../../_metronic/partials/widgets'
 
-export function TeachersOverview() {
+export function StudentsOverview() {
   return (
     <>
       <div className='card mb-5 mb-xl-10' id='kt_profile_details_view'>

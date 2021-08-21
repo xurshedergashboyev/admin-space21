@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import {Dropdown1} from '../../../_metronic/partials'
 import {useLocation} from 'react-router'
 
-const StudentAccountHeader: React.FC = () => {
+const AccountHeader: React.FC = () => {
   const location = useLocation()
 
   return (
@@ -205,4 +205,4 @@ const StudentAccountHeader: React.FC = () => {
   )
 }
 
-export {StudentAccountHeader}
+export {AccountHeader}
