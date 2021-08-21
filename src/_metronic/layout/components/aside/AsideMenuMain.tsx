@@ -34,7 +34,7 @@ export function AsideMenuMain() {
         icon='/media/icons/duotone/Code/Compiling.svg'
       >
         <AsideMenuItemWithSub to='/crafted/pages/profile' title='Profile' hasBullet={true}>
-          <AsideMenuItem to='/crafted/pages/profile/overview' title='TeachersOverview' hasBullet={true} />
+          <AsideMenuItem to='/crafted/pages/profile/overview' title='Overview' hasBullet={true} />
           <AsideMenuItem to='/crafted/pages/profile/projects' title='Projects' hasBullet={true} />
           <AsideMenuItem to='/crafted/pages/profile/campaigns' title='Campaigns' hasBullet={true} />
           <AsideMenuItem to='/crafted/pages/profile/documents' title='Documents' hasBullet={true} />
@@ -56,11 +56,20 @@ export function AsideMenuMain() {
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
         to='/crafted/accounts'
-        title='Accounts'
+        title='Teachers'
         icon='/media/icons/duotone/General/User.svg'
         fontIcon='bi-person'
       >
-        <AsideMenuItem to='/crafted/account/overview' title='TeachersOverview' hasBullet={true} />
+        <AsideMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
+        <AsideMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
+      </AsideMenuItemWithSub>
+      <AsideMenuItemWithSub
+        to='/crafted/accounts'
+        title='Students'
+        icon='/media/icons/duotone/General/User.svg'
+        fontIcon='bi-person'
+      >
+        <AsideMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
         <AsideMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
