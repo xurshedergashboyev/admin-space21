@@ -9,7 +9,7 @@ import {StudentsOverview} from './components/StudentsOverview'
 const accountBreadCrumbs: Array<PageLink> = [
   {
     title: 'Account',
-    path: '/crafted/account/teachers/overview',
+    path: '/crafted/account/students/overview',
     isSeparator: false,
     isActive: false,
   },
@@ -30,17 +30,17 @@ const StudentsAccountPage: React.FC = () => {
         {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>*/}
         {/*  <TeachersOverview />*/}
         {/*</Route>*/}
-        <Route path='/crafted/account/teachers/overview'>
+        <Route path='/crafted/account/students/overview'>
           <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
           <StudentsOverview />
         </Route>
 
-        <Route path="/crafted/account/teachers/settings">
+        <Route path="/crafted/account/students/settings">
           <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
           <Settings />
         </Route>
         <Redirect from='/crafted/account' exact={true} to='/crafted/account/overview' />
-        <Redirect to='/crafted/account/teachers/overview' />
+        <Redirect to='/crafted/account/students/overview' />
       </Switch>
     </>
   )
