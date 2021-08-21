@@ -28,7 +28,7 @@ const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => 
         chart.destroy()
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-dis able-next-line react-hooks/exhaustive-deps
   }, [chartRef])
 
   return (
