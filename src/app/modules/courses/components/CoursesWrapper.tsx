@@ -1,16 +1,15 @@
 import React, {FC} from 'react'
-import {MixedWidget10, MixedWidget11, MixedWidget2, MixedWidget7} from '../../../../_metronic/partials/widgets'
+import {MixedWidget10, MixedWidget11, MixedWidget3, MixedWidget7} from '../../../../_metronic/partials/widgets'
 
 const CoursesWrapper: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8'>
       <div className='col-xxl-4'>
-        <MixedWidget2
+        <MixedWidget3
           className='card-xl-stretch mb-xl-8'
           chartColor='danger'
           chartHeight='200px'
-          strokeColor='#cb1e46'
         />
       </div>
       <div className='col-xxl-4'>
