@@ -1,6 +1,7 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
+import {CoursesWrapper} from './components/CoursesWrapper'
 
 export default function Coursespage () {
   const profileBreadCrumbs: Array<PageLink> = [
@@ -23,7 +24,7 @@ export default function Coursespage () {
       <Switch>
         <Route path="/crafted/courses">
           <PageTitle breadcrumbs={profileBreadCrumbs}>Courses</PageTitle>
-          <h1>Hello</h1>
+          <CoursesWrapper />
         </Route>
       </Switch>
     </>
