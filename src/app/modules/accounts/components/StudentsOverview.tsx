@@ -2,12 +2,6 @@
 import React, {FC} from 'react'
 import {Link} from 'react-router-dom'
 import {KTSVG} from '../../../../_metronic/helpers'
-import {
-  ChartsWidget1,
-  TablesWidget1,
-  ListsWidget5,
-  TablesWidget5,
-} from '../../../../_metronic/partials/widgets'
 import {AccountHeader} from '../AccountHeader'
 
 export const StudentsOverview: FC = () => {
@@ -122,25 +116,25 @@ export const StudentsOverview: FC = () => {
         </div>
       </div>
 
-      <div className='row gy-10 gx-xl-10'>
-        <div className='col-xl-6'>
-          <ChartsWidget1 className='card-xxl-stretch mb-5 mb-xl-10' />
-        </div>
+      {/*<div className='row gy-10 gx-xl-10'>*/}
+      {/*  <div className='col-xl-6'>*/}
+      {/*    <ChartsWidget1 className='card-xxl-stretch mb-5 mb-xl-10' />*/}
+      {/*  </div>*/}
 
-        <div className='col-xl-6'>
-          <TablesWidget1 className='card-xxl-stretch mb-5 mb-xl-10' />
-        </div>
-      </div>
+      {/*  <div className='col-xl-6'>*/}
+      {/*    <TablesWidget1 className='card-xxl-stretch mb-5 mb-xl-10' />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
-      <div className='row gy-10 gx-xl-10'>
-        <div className='col-xl-6'>
-          <ListsWidget5 className='card-xxl-stretch mb-5 mb-xl-10' />
-        </div>
+      {/*<div className='row gy-10 gx-xl-10'>*/}
+      {/*  <div className='col-xl-6'>*/}
+      {/*    <ListsWidget5 className='card-xxl-stretch mb-5 mb-xl-10' />*/}
+      {/*  </div>*/}
 
-        <div className='col-xl-6'>
-          <TablesWidget5 className='card-xxl-stretch mb-5 mb-xl-10' />
-        </div>
-      </div>
+      {/*  <div className='col-xl-6'>*/}
+      {/*    <TablesWidget5 className='card-xxl-stretch mb-5 mb-xl-10' />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </>
   )
 }
