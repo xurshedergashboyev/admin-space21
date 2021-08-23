@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {KTSVG} from '../../../helpers'
+import {Link} from 'react-router-dom'
 
 type Props = {
   className: string
@@ -20,7 +21,7 @@ const StatisticsWidget5: React.FC<Props> = ({
   description,
 }) => {
   return (
-    <a href='#' className={`card bg-${color} hoverable ${className}`}>
+    <Link to="/crafted/courses/info" className={`card bg-${color} hoverable ${className}`}>
       {/* begin::Body */}
       <div className='card-body'>
         <KTSVG path={svgIcon} className={`svg-icon-${iconColor} svg-icon-3x ms-n1`} />
@@ -30,7 +31,7 @@ const StatisticsWidget5: React.FC<Props> = ({
         <div className={`fw-bold text-inverse-${color} fs-7`}>{description}</div>
       </div>
       {/* end::Body */}
-    </a>
+    </Link>
   )
 }
 

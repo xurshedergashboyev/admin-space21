@@ -8,10 +8,12 @@ import {
   ListsWidget5,
   TablesWidget5,
 } from '../../../../_metronic/partials/widgets'
+import {AccountHeader} from '../AccountHeader'
 
-export function TeachersOverview() {
+export function TeacherOverview() {
   return (
     <>
+      <AccountHeader />
       <div className='card mb-5 mb-xl-10' id='kt_profile_details_view'>
         <div className='card-header cursor-pointer'>
           <div className='card-title m-0'>
@@ -28,7 +30,7 @@ export function TeachersOverview() {
             <label className='col-lg-4 fw-bold text-muted'>Full Name</label>
 
             <div className='col-lg-8'>
-              <span className='fw-bolder fs-6 text-dark'>Maraim Tuxtasunov</span>
+              <span className='fw-bolder fs-6 text-dark'>Dilovar Mavlonqulov</span>
             </div>
           </div>
 
@@ -62,7 +64,7 @@ export function TeachersOverview() {
 
             <div className='col-lg-8'>
               <a href='#' className='fw-bold fs-6 text-dark text-hover-primary'>
-                maraimtuxtasunov@gmail.com
+                dilovardev@gmail.com
               </a>
             </div>
           </div>
@@ -142,3 +144,4 @@ export function TeachersOverview() {
     </>
   )
 }
+

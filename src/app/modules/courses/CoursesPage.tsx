@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 import {CoursesWrapper} from './components/CoursesWrapper'
 
-export default function Coursespage () {
+export default function CoursesPage () {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Courses',
@@ -22,7 +22,7 @@ export default function Coursespage () {
   return (
     <>
       <Switch>
-        <Route path="/crafted/courses">
+        <Route path="/crafted/courses/overview">
           <PageTitle breadcrumbs={profileBreadCrumbs}>Courses</PageTitle>
           <CoursesWrapper />
         </Route>
