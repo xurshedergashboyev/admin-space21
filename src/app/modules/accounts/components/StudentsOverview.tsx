@@ -8,10 +8,12 @@ import {
   ListsWidget5,
   TablesWidget5,
 } from '../../../../_metronic/partials/widgets'
+import {AccountHeader} from '../AccountHeader'
 
 export function StudentsOverview() {
   return (
     <>
+      <AccountHeader />
       <div className='card mb-5 mb-xl-10' id='kt_profile_details_view'>
         <div className='card-header cursor-pointer'>
           <div className='card-title m-0'>
