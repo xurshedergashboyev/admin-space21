@@ -26,7 +26,6 @@ export function PrivateRoutes() {
         <Route path='/crafted/pages/wizards' component={WizardsPage} />
         <Route path='/crafted/widgets' component={WidgetsPage} />
         <Route path='/crafted/account/students' component={AccountPage} />
-        <Route path='/crafted/account/teachers' component={AccountPage} />
         <Route path='/crafted/account/student/info' component={StudentOverviewPage} />
         <Route path='/crafted/account/teacher/info' component={TeacherInfoPage} />
         <Route path='/crafted/account/teachers/overview' component={TeachersPage} />
