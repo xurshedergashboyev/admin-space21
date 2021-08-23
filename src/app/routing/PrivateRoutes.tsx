@@ -23,7 +23,7 @@ export function PrivateRoutes() {
         <Route path='/crafted/pages/wizards' component={WizardsPage} />
         <Route path='/crafted/widgets' component={WidgetsPage} />
         <Route path='/crafted/account' component={AccountPage} />
-        <Route path='/crafted/account/student/overview' component={StudentOverviewPage} />
+        <Route path='/crafted/account/student/info' component={StudentOverviewPage} />
         <Route path='/crafted/courses' component={CoursesPage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
