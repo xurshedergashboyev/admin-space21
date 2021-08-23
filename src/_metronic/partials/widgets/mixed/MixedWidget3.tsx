@@ -37,7 +37,7 @@ const MixedWidget3: React.FC<Props> = ({className, chartColor, chartHeight}) => 
     <div className={`card ${className}`}>
       {/* begin::Header  */}
       <div className={`card-header border-0 bg-${chartColor} py-5`}>
-        <h3 className='card-title fw-bolder text-white'>Sales Progress</h3>
+        <h3 className='card-title fw-bolder text-white'>Courses students</h3>
 
         <div className='card-toolbar'>
           {/* begin::Menu  */}
@@ -78,15 +78,15 @@ const MixedWidget3: React.FC<Props> = ({className, chartColor, chartHeight}) => 
           <div className='row g-0 mb-7'>
             {/* begin::Col  */}
             <div className='col mx-5'>
-              <div className='fs-6 text-gray-400'>Avarage Sale</div>
-              <div className='fs-2 fw-bolder text-gray-800'>$650</div>
+              <div className='fs-6 text-gray-400'>Total Courses</div>
+              <div className='fs-2 fw-bolder text-gray-800'>7</div>
             </div>
             {/* end::Col  */}
 
             {/* begin::Col  */}
             <div className='col mx-5'>
-              <div className='fs-6 text-gray-400'>Comissions</div>
-              <div className='fs-2 fw-bolder text-gray-800'>$29,500</div>
+              <div className='fs-6 text-gray-400'>Total Course Teachers</div>
+              <div className='fs-2 fw-bolder text-gray-800'>12</div>
             </div>
             {/* end::Col  */}
           </div>
@@ -124,11 +124,27 @@ const chartOptions = (chartHeight: string): ApexOptions => {
   return {
     series: [
       {
-        name: 'Net Profit',
+        name: 'Frontend',
         data: [35, 65, 75, 55, 45, 60, 55],
       },
       {
-        name: 'Revenue',
+        name: 'English',
+        data: [40, 70, 80, 60, 50, 65, 60],
+      },
+      {
+        name: 'Design',
+        data: [40, 70, 80, 60, 50, 65, 60],
+      },
+      {
+        name: 'Backend',
+        data: [40, 70, 80, 60, 50, 65, 60],
+      },
+      {
+        name: 'SMM',
+        data: [40, 70, 80, 60, 50, 65, 60],
+      },
+      {
+        name: 'IELTS',
         data: [40, 70, 80, 60, 50, 65, 60],
       },
     ],
@@ -217,14 +233,14 @@ const chartOptions = (chartHeight: string): ApexOptions => {
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' students'
         },
       },
       marker: {
         show: false,
       },
     },
-    colors: ['#ffffff', '#ffffff'],
+    colors: ['#ffffff', '#ffbf2b', '#06d6a0', '#118ab2', '#f15bb5'],
     grid: {
       borderColor: borderColor,
       strokeDashArray: 4,

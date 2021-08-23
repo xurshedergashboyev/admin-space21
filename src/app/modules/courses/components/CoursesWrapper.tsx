@@ -1,5 +1,11 @@
 import React, {FC} from 'react'
-import {MixedWidget10, MixedWidget11, MixedWidget3, MixedWidget7} from '../../../../_metronic/partials/widgets'
+import {
+  ListsWidget1,
+  MixedWidget10,
+  MixedWidget11,
+  MixedWidget3,
+  MixedWidget7,
+} from '../../../../_metronic/partials/widgets'
 
 const CoursesWrapper: FC = () => (
   <>
@@ -29,6 +35,8 @@ const CoursesWrapper: FC = () => (
           secondChartColor='danger'
         />
       </div>
+      <ListsWidget1 className={''} />
+
     </div>
     {/* end::Row */}
   </>
