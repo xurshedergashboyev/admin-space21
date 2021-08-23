@@ -10,7 +10,7 @@ type Props = {
   chartHeight: string
 }
 
-const MixedWidget7: React.FC<Props> = ({className, chartColor, chartHeight}) => {
+const MixedPieCourse: React.FC<Props> = ({className, chartColor, chartHeight}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -144,4 +144,4 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   }
 }
 
-export {MixedWidget7}
+export {MixedPieCourse}

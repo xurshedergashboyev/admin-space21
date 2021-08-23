@@ -8,6 +8,7 @@ import {
 } from '../../../../_metronic/partials/widgets'
 import {Connections} from '../../profile/components/Connections'
 import {StatisticsCourse} from './StatisticsCourse'
+import {MixedPieCourse} from './MixedPieCourse'
 
 const CoursesWrapper: FC = () => (
   <>
@@ -22,7 +23,7 @@ const CoursesWrapper: FC = () => (
       </div>
       <div className='col-xxl-4'>
         {/*<ListsWidget5 className='card-xxl-stretch' />*/}
-        <MixedWidget7 className={"card-xl-stretch"} chartColor={"primary"} chartHeight={"200px"} />
+        <MixedPieCourse className={"card-xl-stretch"} chartColor={"primary"} chartHeight={"200px"} />
       </div>
       <div className='col-xxl-4'>
         <MixedWidget10
