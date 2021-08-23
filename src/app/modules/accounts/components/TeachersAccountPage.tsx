@@ -22,7 +22,7 @@ const accountBreadCrumbs: Array<PageLink> = [
   },
 ]
 
-const StudentsAccountPage: React.FC = () => {
+const TeachersAccountPage: React.FC = () => {
   return (
     <>
       <Switch>
@@ -47,4 +47,4 @@ const StudentsAccountPage: React.FC = () => {
   )
 }
 
-export default StudentsAccountPage
+export default TeachersAccountPage;

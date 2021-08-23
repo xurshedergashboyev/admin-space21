@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, {FC} from 'react'
 import {Link} from 'react-router-dom'
 import {KTSVG} from '../../../../_metronic/helpers'
 import {
@@ -10,7 +10,7 @@ import {
 } from '../../../../_metronic/partials/widgets'
 import {AccountHeader} from '../AccountHeader'
 
-export function StudentsOverview() {
+export const StudentsOverview: FC = () => {
   return (
     <>
       <AccountHeader />
