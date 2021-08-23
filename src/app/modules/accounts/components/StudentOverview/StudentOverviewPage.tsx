@@ -6,7 +6,7 @@ import {StudentsOverview} from '../StudentsOverview'
 export default function StudentOverviewPage () {
   const profileBreadCrumbs: Array<PageLink> = [
     {
-      title: 'Student Overview',
+      title: 'Student info',
       path: '/crafted/account/student/info/',
       isSeparator: false,
       isActive: false,

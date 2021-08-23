@@ -39,4 +39,4 @@ const CoursesItem: FC = () => {
   )
 }
 
-export {MixedWidget10}
+export {CoursesItem}
