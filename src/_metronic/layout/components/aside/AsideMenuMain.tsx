@@ -114,8 +114,8 @@ export function AsideMenuMain() {
         icon='/media/icons/duotone/Communication/Group-chat.svg'
       >
         <AsideMenuItem to='/apps/chat/private-chat' title='Private Chat' hasBullet={true} />
-        <AsideMenuItem to='/apps/chat/group-chat' title='Group Chart' hasBullet={true} />
-        <AsideMenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />
+        <AsideMenuItem to='/apps/chat/group-chat' title='Corporate Chat' hasBullet={true} />
+        {/*<AsideMenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />*/}
       </AsideMenuItemWithSub>
       <div className='menu-item'>
         <div className='menu-content'>

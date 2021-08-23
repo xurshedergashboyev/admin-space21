@@ -43,9 +43,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Melody Macy
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>melody@altbox.com</div>
                   </div>
                 </div>
@@ -64,9 +69,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Max Smith
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>max@kt.com</div>
                   </div>
                 </div>
@@ -85,9 +95,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Sean Bean
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>sean@dellito.com</div>
                   </div>
                 </div>
@@ -107,9 +122,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Brian Cox
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>brian@exchange.com</div>
                   </div>
                 </div>
@@ -130,9 +150,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Mikaela Collins
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>mikaela@pexcom.com</div>
                   </div>
                 </div>
@@ -151,9 +176,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Francis Mitcham
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>f.mitcham@kpmg.com.au</div>
                   </div>
                 </div>
@@ -176,9 +206,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Olivia Wild
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>olivia@corpmail.com</div>
                   </div>
                 </div>
@@ -199,9 +234,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Neil Owen
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>owen.neil@gmail.com</div>
                   </div>
                 </div>
@@ -221,9 +261,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Dan Wilson
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>dam@consilting.com</div>
                   </div>
                 </div>
@@ -246,9 +291,14 @@ const Private: FC = () => {
                   </div>
 
                   <div className='ms-5'>
-                    <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
-                      Emma Bold
-                    </a>
+                    <div className='d-flex align-items-center justify-content-center me-3'>
+                      <a href='#' className='fs-5 fw-bolder text-gray-900 text-hover-primary mb-2'>
+                        Emma Bold
+                      </a>
+                      <p className='fs-8 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                        Facebook
+                      </p>
+                    </div>
                     <div className='fw-bold text-gray-400'>emma@intenso.com</div>
                   </div>
                 </div>
@@ -268,12 +318,17 @@ const Private: FC = () => {
             <div className='card-title'>
               <div className='symbol-group symbol-hover'></div>
               <div className='d-flex justify-content-center flex-column me-3'>
-                <a
-                  href='#'
-                  className='fs-4 fw-bolder text-gray-900 text-hover-primary me-1 mb-2 lh-1'
-                >
-                  Brian Cox
-                </a>
+                <div className='d-flex align-items-center justify-content-center me-3'>
+                  <a
+                    href='#'
+                    className='fs-4 fw-bolder text-gray-900 text-hover-primary me-1 mb-2 lh-1'
+                  >
+                    Brian Cox
+                  </a>
+                  <p className='fs-4 fw-bolder text-warning text-hover-primary me-1 mb-2 mx-2'>
+                    Facebook
+                  </p>
+                </div>
 
                 <div className='mb-0 lh-1'>
                   <span className='badge badge-success badge-circle w-10px h-10px me-1'></span>
