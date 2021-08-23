@@ -1,7 +1,6 @@
 import React, {FC} from 'react'
 import {TablesWidget9} from '../../../../../_metronic/partials/widgets'
 
-
 const StudentsTable: FC = () => {
   return (
     <>
@@ -13,7 +12,7 @@ const StudentsTable: FC = () => {
           <ul className='pagination'>
             <li className='page-item previous'>
               <a href='#' className='page-link'>
-                <i className='previous'></i>
+                <i className='previous' />
               </a>
             </li>
 
@@ -46,7 +45,6 @@ const StudentsTable: FC = () => {
                 5
               </a>
             </li>
-
             <li className='page-item'>
               <a href='#' className='page-link'>
                 6
@@ -55,13 +53,14 @@ const StudentsTable: FC = () => {
 
             <li className='page-item next'>
               <a href='#' className='page-link'>
-                <i className='next'></i>
+                <i className='next' />
               </a>
             </li>
           </ul>
-        </div>      </div>
+        </div>
+      </div>
     </>
   )
 }
 
-export default StudentsTable;
+export default StudentsTable

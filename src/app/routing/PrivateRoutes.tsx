@@ -12,7 +12,7 @@ export function PrivateRoutes() {
   const WidgetsPage = lazy(() => import('../modules/widgets/WidgetsPage'))
   const ChatPage = lazy(() => import('../modules/apps/chat/ChatPage'))
   const CoursesPage = lazy(() => import('../modules/courses/CoursesPage'))
-  // const StudentsOverview = lazy(() => import('../modules/accounts/components/StudentsOverview'))
+  const StudentOverviewPage = lazy(() => import('../modules/accounts/components/StudentOverview/StudentOverviewPage'))
 
   return (
     <Suspense fallback={<FallbackView />}>
@@ -23,7 +23,7 @@ export function PrivateRoutes() {
         <Route path='/crafted/pages/wizards' component={WizardsPage} />
         <Route path='/crafted/widgets' component={WidgetsPage} />
         <Route path='/crafted/account' component={AccountPage} />
-        {/*<Route path='/crafted/account/student/info' component={StudentsOverview} />*/}
+        <Route path='/crafted/account/student/overview' component={StudentOverviewPage} />
         <Route path='/crafted/courses' component={CoursesPage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
