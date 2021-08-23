@@ -7,7 +7,7 @@ export default function StudentOverviewPage () {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Student Overview',
-      path: '/crafted/account/student/overview',
+      path: '/crafted/account/student/overview/',
       isSeparator: false,
       isActive: false,
     },
@@ -24,7 +24,6 @@ export default function StudentOverviewPage () {
       <Switch>
         <Route path="/crafted/account/student/overview/">
           <PageTitle breadcrumbs={profileBreadCrumbs}>Student Overview</PageTitle>
-          {/*<CoursesWrapper />*/}
           <StudentsOverview />
         </Route>
       </Switch>
