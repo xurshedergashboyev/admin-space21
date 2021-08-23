@@ -55,7 +55,7 @@ export function AsideMenuMain() {
         </AsideMenuItemWithSub>
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
-        to='/crafted/accounts'
+        to='/crafted/accounts/teachers/overview'
         title='Teachers'
         icon='/media/icons/duotone/General/Clipboard.svg'
         fontIcon='bi-person'
@@ -64,7 +64,7 @@ export function AsideMenuMain() {
         <AsideMenuItem to='/crafted/account/teachers/settings' title='Settings' hasBullet={true} />
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
-        to='/crafted/accounts'
+        to='/crafted/accounts/students/overview'
         title='Students'
         icon='/media/icons/duotone/General/User.svg'
         fontIcon='bi-person'
