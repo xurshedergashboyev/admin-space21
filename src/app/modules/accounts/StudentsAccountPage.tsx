@@ -1,10 +1,10 @@
-import React from 'react'
-import {Route, Switch} from 'react-router-dom'
-import {PageLink, PageTitle} from '../../../_metronic/layout/core'
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+import {PageLink, PageTitle} from '../../../_metronic/layout/core';
 // import {TeachersOverview} from './components/TeachersOverview'
-import {Settings} from './components/settings/Settings'
-import {AccountHeader} from './AccountHeader'
-import {StudentsOverview} from './components/StudentsOverview'
+import {Settings} from './components/settings/Settings';
+import {AccountHeader} from './AccountHeader';
+import {StudentsOverview} from './components/StudentsOverview';
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
