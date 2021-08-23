@@ -23,15 +23,14 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
           data-bs-trigger='hover'
           title='Click to add a user'
         >
-          <a
-            href='#'
+          <Link to="/crafted/account/student/info"
             className='btn btn-sm btn-light-primary'
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_invite_friends'
           >
             <KTSVG path='/media/icons/duotone/Communication/Add-user.svg' className='svg-icon-3' />
             New Student
-          </a>
+          </Link>
         </div>
       </div>
       {/* end::Header */}
@@ -65,8 +64,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
             {/* end::Table head */}
             {/* begin::Table body */}
             <tbody>
-            <tr>
-              {/*<Link to='/crafted/account/student/overview'>*/}
+              <tr>
                 <td>
                   <div className='form-check form-check-sm form-check-custom form-check-solid'>
                     <input className='form-check-input widget-9-check' type='checkbox' value='1' />
@@ -78,9 +76,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-11.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                       <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
                         Dilovar
-                      </a>
+                      </Link>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         HTML, JS, ReactJS
                       </span>
@@ -88,17 +86,17 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                   </div>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     6 months
-                  </a>
+                  </Link>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
                     Web, UI/UX Design
                   </span>
                 </td>
                 <td>
-                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     599 000 sums
-                  </a>
+                  </Link>
                 </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
@@ -116,34 +114,30 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </td>
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
-                    <a
-                      href='#'
+                    <Link to="/crafted/account/student/info"
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
                         path='/media/icons/duotone/General/Settings-1.svg'
                         className='svg-icon-3'
                       />
-                    </a>
-                    <a
-                      href='#'
+                    </Link>
+                    <Link to="/crafted/account/student/info"
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
                         path='/media/icons/duotone/Communication/Write.svg'
                         className='svg-icon-3'
                       />
-                    </a>
-                    <a
-                      href='#'
+                    </Link>
+                    <Link to="/crafted/account/student/info"
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
-                    </a>
+                    </Link>
                   </div>
                 </td>
-              {/*</Link>*/}
-            </tr>
+              </tr>
             <tr>
               <td>
                 <div className='form-check form-check-sm form-check-custom form-check-solid'>
@@ -156,9 +150,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-3.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
                       Maftuna
-                    </a>
+                    </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Beginner, Elementary, Pre-Intermediate...
                       </span>
@@ -166,17 +160,17 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </div>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   3-4 months
-                </a>
+                </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>
                     Houses &amp; Hotels
                   </span>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   229 000 sums
-                </a>
+                </Link>
               </td>
               <td className='text-end'>
                 <div className='d-flex flex-column w-100 me-2'>
@@ -194,30 +188,27 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <a
-                    href='#'
+                   <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/General/Settings-1.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                   <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/Communication/Write.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                   <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
-                  </a>
+                  </Link>
                 </div>
               </td>
             </tr>
@@ -233,9 +224,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-4.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
                       Maraim
-                    </a>
+                    </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Adobe Photoshop, Illustrator
                       </span>
@@ -243,15 +234,15 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </div>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   6 months
-                </a>
+                </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Transportation</span>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   599 000 sums
-                </a>
+                </Link>
               </td>
               <td className='text-end'>
                 <div className='d-flex flex-column w-100 me-2'>
@@ -269,30 +260,27 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <a
-                    href='#'
+                   <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/General/Settings-1.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/Communication/Write.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
-                  </a>
+                  </Link>
                 </div>
               </td>
             </tr>
@@ -308,9 +296,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-5.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
                       Mahliyo
-                    </a>
+                    </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Telegram, Instagram
                       </span>
@@ -318,15 +306,15 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </div>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   2 months
-                </a>
+                </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Insurance</span>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   599 000 sums
-                </a>
+                </Link>
               </td>
               <td className='text-end'>
                 <div className='d-flex flex-column w-100 me-2'>
@@ -344,30 +332,27 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <a
-                    href='#'
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/General/Settings-1.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/Communication/Write.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                   <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
-                  </a>
+                  </Link>
                 </div>
               </td>
             </tr>
@@ -383,9 +368,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-6.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
                       Farrux
-                    </a>
+                    </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Pre-IELTS, IELTS
                       </span>
@@ -393,15 +378,15 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </div>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   6 months
-                </a>
+                </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Art Director</span>
               </td>
               <td>
-                <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   1 000 000 sums
-                </a>
+                </Link>
               </td>
               <td className='text-end'>
                 <div className='d-flex flex-column w-100 me-2'>
@@ -419,30 +404,27 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <a
-                    href='#'
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/General/Settings-1.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
                       path='/media/icons/duotone/Communication/Write.svg'
                       className='svg-icon-3'
                     />
-                  </a>
-                  <a
-                    href='#'
+                  </Link>
+                  <Link to="/crafted/account/student/info"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
-                  </a>
+                  </Link>
                 </div>
               </td>
             </tr>
