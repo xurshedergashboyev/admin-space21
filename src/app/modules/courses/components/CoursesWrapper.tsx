@@ -7,13 +7,14 @@ import {
   MixedWidget7, StatisticsWidget5, TablesWidget9,
 } from '../../../../_metronic/partials/widgets'
 import {Connections} from '../../profile/components/Connections'
+import {StatisticsCourse} from './StatisticsCourse'
 
 const CoursesWrapper: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8'>
       <div className='col-xxl-4'>
-        <MixedWidget3
+        <StatisticsCourse
           className='card-xl-stretch mb-xl-8'
           chartColor='danger'
           chartHeight='200px'
@@ -85,7 +86,6 @@ const CoursesWrapper: FC = () => (
           description='Lands, Houses, Ranchos, Farms'
         />
       </div>
-
       <div className='col-xl-4'>
         <StatisticsWidget5
           className='card-xl-stretch mb-xl-8'

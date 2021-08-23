@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG} from '../../../helpers'
-import {getCSSVariableValue} from '../../../assets/ts/_utils'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {KTSVG} from '../../../../_metronic/helpers';
+import {getCSSVariableValue} from '../../../../_metronic/assets/ts/_utils';
+import {Dropdown1} from '../../../../_metronic/partials';
 import clsx from 'clsx'
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
   chartHeight: string
 }
 
-const MixedWidget3: React.FC<Props> = ({className, chartColor, chartHeight}) => {
+const StatisticsCourse: React.FC<Props> = ({className, chartColor, chartHeight}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const MixedWidget3: React.FC<Props> = ({className, chartColor, chartHeight}) => 
     <div className={`card ${className}`}>
       {/* begin::Header  */}
       <div className={`card-header border-0 bg-${chartColor} py-5`}>
-        <h3 className='card-title fw-bolder text-white'>Courses students</h3>
+        <h3 className='card-title fw-bolder text-white'>Courses revenue</h3>
 
         <div className='card-toolbar'>
           {/* begin::Menu  */}
@@ -221,7 +221,7 @@ const chartOptions = (chartHeight: string): ApexOptions => {
       },
       y: {
         formatter: function (val) {
-          return val + ' students'
+          return val + ' million sums'
         },
       },
       marker: {
@@ -245,4 +245,4 @@ const chartOptions = (chartHeight: string): ApexOptions => {
   }
 }
 
-export {MixedWidget3}
+export {StatisticsCourse}
