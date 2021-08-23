@@ -20,7 +20,7 @@ const StatisticsWidget5: React.FC<Props> = ({
   description,
 }) => {
   return (
-    <a href='#' className={`card bg-${color} hoverable ${className}`}>
+    <a href='/' className={`card bg-${color} hoverable ${className}`}>
       {/* begin::Body */}
       <div className='card-body'>
         <KTSVG path={svgIcon} className={`svg-icon-${iconColor} svg-icon-3x ms-n1`} />
