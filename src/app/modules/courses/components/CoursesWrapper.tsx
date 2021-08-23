@@ -4,8 +4,9 @@ import {
   MixedWidget10,
   MixedWidget11,
   MixedWidget3,
-  MixedWidget7, TablesWidget9,
+  MixedWidget7, StatisticsWidget5, TablesWidget9,
 } from '../../../../_metronic/partials/widgets'
+import {Connections} from '../../profile/components/Connections'
 
 const CoursesWrapper: FC = () => (
   <>
@@ -35,7 +36,43 @@ const CoursesWrapper: FC = () => (
           secondChartColor='danger'
         />
       </div>
-      <TablesWidget9 className={''} />
+      {/*<Connections />*/}
+    </div>
+    {/* end::Row */}
+    {/* begin::Row */}
+    <div className='row g-5 g-xl-8'>
+      <div className='col-xl-4'>
+        <StatisticsWidget5
+          className='card-xl-stretch mb-xl-8'
+          svgIcon='/media/icons/duotone/Shopping/Cart3.svg'
+          color='danger'
+          iconColor='white'
+          title='Shopping Cart'
+          description='Lands, Houses, Ranchos, Farms'
+        />
+      </div>
+
+      <div className='col-xl-4'>
+        <StatisticsWidget5
+          className='card-xl-stretch mb-xl-8'
+          svgIcon='/media/icons/duotone/Home/Building.svg'
+          color='primary'
+          iconColor='white'
+          title='Appartments'
+          description='Flats, Shared Rooms, Duplex'
+        />
+      </div>
+
+      <div className='col-xl-4'>
+        <StatisticsWidget5
+          className='card-xl-stretch mb-5 mb-xl-8'
+          svgIcon='/media/icons/duotone/Shopping/Chart-bar1.svg'
+          color='success'
+          iconColor='white'
+          title='Sales Stats'
+          description='50% Increased for FY20'
+        />
+      </div>
     </div>
     {/* end::Row */}
   </>
