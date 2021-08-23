@@ -320,17 +320,22 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Insurance</span>
                 </td>
+                <td>
+                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                    599 000 sums
+                  </a>
+                </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
-                      <span className='text-muted me-2 fs-7 fw-bold'>50%</span>
+                      <span className='text-muted me-2 fs-7 fw-bold'>1 month</span>
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
                         className='progress-bar bg-warning'
                         role='progressbar'
                         style={{width: '50%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -376,31 +381,36 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Kevin Leonard
+                        IELTS
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
-                        HTML, JS, ReactJS
+                        Pre-IELTS, IELTS
                       </span>
                     </div>
                   </div>
                 </td>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
-                    RoadGee
+                    6 months
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Art Director</span>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                    1 000 000 sums
+                  </a>
                 </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
-                      <span className='text-muted me-2 fs-7 fw-bold'>90%</span>
+                      <span className='text-muted me-2 fs-7 fw-bold'>2 months</span>
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
                         className='progress-bar bg-info'
                         role='progressbar'
-                        style={{width: '90%'}}
-                      ></div>
+                        style={{width: '30%'}}
+                      />
                     </div>
                   </div>
                 </td>
