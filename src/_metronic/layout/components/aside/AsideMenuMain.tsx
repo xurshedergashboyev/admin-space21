@@ -80,15 +80,15 @@ export function AsideMenuMain() {
       >
         <AsideMenuItem to='/crafted/courses/overview' title='Overview' hasBullet={true} />
       </AsideMenuItemWithSub>
-      <AsideMenuItemWithSub
-        to='/error'
-        title='Errors'
-        fontIcon='bi-sticky'
-        icon='/media/icons/duotone/Code/Error-circle.svg'
-      >
-        <AsideMenuItem to='/error/404' title='Error 404' hasBullet={true} />
-        <AsideMenuItem to='/error/500' title='Error 500' hasBullet={true} />
-      </AsideMenuItemWithSub>
+      {/*<AsideMenuItemWithSub*/}
+      {/*  to='/error'*/}
+      {/*  title='Errors'*/}
+      {/*  fontIcon='bi-sticky'*/}
+      {/*  icon='/media/icons/duotone/Code/Error-circle.svg'*/}
+      {/*>*/}
+      {/*  <AsideMenuItem to='/error/404' title='Error 404' hasBullet={true} />*/}
+      {/*  <AsideMenuItem to='/error/500' title='Error 500' hasBullet={true} />*/}
+      {/*</AsideMenuItemWithSub>*/}
       <AsideMenuItemWithSub
         to='/crafted/widgets'
         title='Widgets'
@@ -119,7 +119,7 @@ export function AsideMenuMain() {
       </AsideMenuItemWithSub>
       <div className='menu-item'>
         <div className='menu-content'>
-          <div className='separator mx-1 my-4'></div>
+          <div className='separator mx-1 my-4'/>
         </div>
       </div>
       <div className='menu-item'>
