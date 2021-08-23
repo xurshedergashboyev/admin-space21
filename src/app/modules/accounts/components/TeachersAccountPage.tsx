@@ -5,6 +5,7 @@ import {PageLink, PageTitle} from '../../../../_metronic/layout/core';
 import {Settings} from './settings/Settings';
 import {AccountHeader} from '../AccountHeader';
 import StudentsTable from '../components/StudentsTable/StudentsTable'
+import {Connections} from '../../profile/components/Connections'
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
@@ -31,7 +32,7 @@ const StudentsAccountPage: React.FC = () => {
         {/*</Route>*/}
         <Route path='/crafted/account/teachers/overview'>
           <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
-
+          <Connections />
           {/*<StudentsOverview />*/}
         </Route>
 
