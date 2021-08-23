@@ -12,8 +12,8 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Courses Statistics</span>
-          <span className='text-muted mt-1 fw-bold fs-7'>Over 10 courses</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Students</span>
+          <span className='text-muted mt-1 fw-bold fs-7'>Over 150 students</span>
         </h3>
         <div
           className='card-toolbar'
@@ -29,7 +29,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
             data-bs-target='#kt_modal_invite_friends'
           >
             <KTSVG path='/media/icons/duotone/Communication/Add-user.svg' className='svg-icon-3' />
-            New Course
+            New Student
           </a>
         </div>
       </div>
@@ -54,7 +54,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     />
                   </div>
                 </th>
-                <th className='min-w-150px'>Courses</th>
+                <th className='min-w-150px'>Students</th>
                 <th className='min-w-140px'>Duration</th>
                 <th className='min-w-120px'>Price</th>
                 <th className='min-w-120px'>Progress</th>
@@ -77,7 +77,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Frontend
+                        Dilovar
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         HTML, JS, ReactJS
@@ -154,7 +154,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        English
+                        Maftuna
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Beginner, Elementary, Pre-Intermediate...
@@ -231,7 +231,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Graphic Design
+                        Maraim
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Adobe Photoshop, Illustrator
@@ -306,7 +306,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        SMM
+                        Mahliyo
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Telegram, Instagram
@@ -381,7 +381,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        IELTS
+                        Farrux
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         Pre-IELTS, IELTS

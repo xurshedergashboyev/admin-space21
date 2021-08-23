@@ -25,7 +25,7 @@ const accountBreadCrumbs: Array<PageLink> = [
 const StudentsAccountPage: React.FC = () => {
   return (
     <>
-      <AccountHeader />
+      {/*<AccountHeader />*/}
       <Switch>
         {/*<Route path='/crafted/account/teachers/overview'>*/}
         {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>*/}
