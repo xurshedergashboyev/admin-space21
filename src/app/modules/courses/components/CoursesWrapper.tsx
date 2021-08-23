@@ -4,7 +4,7 @@ import {
   MixedWidget10,
   MixedWidget11,
   MixedWidget3,
-  MixedWidget7,
+  MixedWidget7, TablesWidget9,
 } from '../../../../_metronic/partials/widgets'
 
 const CoursesWrapper: FC = () => (
@@ -35,8 +35,7 @@ const CoursesWrapper: FC = () => (
           secondChartColor='danger'
         />
       </div>
-      <ListsWidget1 className={''} />
-
+      <TablesWidget9 className={''} />
     </div>
     {/* end::Row */}
   </>

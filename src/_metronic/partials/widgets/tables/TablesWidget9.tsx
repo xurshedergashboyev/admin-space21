@@ -12,8 +12,8 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Members Statistics</span>
-          <span className='text-muted mt-1 fw-bold fs-7'>Over 500 members</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Courses Statistics</span>
+          <span className='text-muted mt-1 fw-bold fs-7'>Over 10 courses</span>
         </h3>
         <div
           className='card-toolbar'
@@ -29,7 +29,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
             data-bs-target='#kt_modal_invite_friends'
           >
             <KTSVG path='/media/icons/duotone/Communication/Add-user.svg' className='svg-icon-3' />
-            New Member
+            New Course
           </a>
         </div>
       </div>
@@ -54,8 +54,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     />
                   </div>
                 </th>
-                <th className='min-w-150px'>Authors</th>
-                <th className='min-w-140px'>Company</th>
+                <th className='min-w-150px'>Courses</th>
+                <th className='min-w-140px'>Duration</th>
+                <th className='min-w-120px'>Price</th>
                 <th className='min-w-120px'>Progress</th>
                 <th className='min-w-100px text-end'>Actions</th>
               </tr>
@@ -76,7 +77,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Ana Simmons
+                        Frontend
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         HTML, JS, ReactJS
@@ -86,23 +87,28 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                 </td>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
-                    Intertico
+                    6 months
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
                     Web, UI/UX Design
                   </span>
                 </td>
+                <td>
+                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                    599 000 sums
+                  </a>
+                </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
-                      <span className='text-muted me-2 fs-7 fw-bold'>50%</span>
+                      <span className='text-muted me-2 fs-7 fw-bold'>3 months</span>
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
                         className='progress-bar bg-primary'
                         role='progressbar'
                         style={{width: '50%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -148,33 +154,38 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Jessie Clarcson
+                        English
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
+                        Beginner, Elementary, Pre-Intermediate...
                       </span>
                     </div>
                   </div>
                 </td>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
-                    Agoda
+                    3-4 months
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
                     Houses &amp; Hotels
                   </span>
                 </td>
+                <td>
+                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                    229 000 sums
+                  </a>
+                </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
-                      <span className='text-muted me-2 fs-7 fw-bold'>70%</span>
+                      <span className='text-muted me-2 fs-7 fw-bold'>2.5 months</span>
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
                         className='progress-bar bg-danger'
                         role='progressbar'
                         style={{width: '70%'}}
-                      ></div>
+                      />
                     </div>
                   </div>
                 </td>
@@ -220,31 +231,36 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Lebron Wayde
+                        Graphic Design
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
-                        PHP, Laravel, VueJS
+                        Adobe Photoshop, Illustrator
                       </span>
                     </div>
                   </div>
                 </td>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
-                    RoadGee
+                    6 months
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Transportation</span>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                    599 000 sums
+                  </a>
                 </td>
                 <td className='text-end'>
                   <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
-                      <span className='text-muted me-2 fs-7 fw-bold'>60%</span>
+                      <span className='text-muted me-2 fs-7 fw-bold'>5 months</span>
                     </div>
                     <div className='progress h-6px w-100'>
                       <div
                         className='progress-bar bg-success'
                         role='progressbar'
-                        style={{width: '60%'}}
-                      ></div>
+                        style={{width: '90%'}}
+                      />
                     </div>
                   </div>
                 </td>
@@ -290,17 +306,17 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                       <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Natali Goodwin
+                        SMM
                       </a>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
-                        Python, PostgreSQL, ReactJS
+                        Telegram, Instagram
                       </span>
                     </div>
                   </div>
                 </td>
                 <td>
                   <a href='#' className='text-dark fw-bolder text-hover-primary d-block fs-6'>
-                    The Hill
+                    2 months
                   </a>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>Insurance</span>
                 </td>
