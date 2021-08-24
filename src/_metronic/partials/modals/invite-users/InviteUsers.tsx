@@ -145,12 +145,41 @@ const InviteUsers: FC = () => {
               <span className='text-uppercase bg-body fs-7 fw-bold text-muted px-3'>or</span>
             </div>
 
-            <textarea
-              className='form-control form-control-solid mb-8'
-              rows={3}
-              placeholder='Type or paste emails here'
-            ></textarea>
-
+            {/*<textarea*/}
+            {/*  className='form-control form-control-solid mb-8'*/}
+            {/*  rows={3}*/}
+            {/*  placeholder='Type or paste emails here'*/}
+            {/*/>*/}
+            <label htmlFor='input' className="mb-2 fs-4">
+              Name
+            </label>
+            <input
+              required
+              type={"name"}
+              className="form-control form-control-solid mb-8"
+            />
+            <label htmlFor='input' className="mb-2 fs-4">
+              Email
+            </label>
+            <input
+              type={"email"}
+              className="form-control form-control-solid mb-8"
+            />
+            <label htmlFor='input' className="mb-2 fs-4">
+              Phone
+            </label>
+            <input
+              type="number"
+              required
+              className="form-control form-control-solid mb-8"
+            />
+            <label htmlFor='input' className="mb-2 fs-4">
+              Course
+            </label>
+            <input
+              required
+              className="form-control form-control-solid mb-8"
+            />
             <div className='mb-10'>
               <div className='fs-6 fw-bold mb-2'>Your Invitations</div>
 
