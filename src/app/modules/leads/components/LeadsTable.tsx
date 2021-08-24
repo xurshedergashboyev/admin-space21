@@ -1,7 +1,7 @@
 import React, {FC} from 'react'
 import {TablesWidget9} from '../../../../_metronic/partials/widgets'
 
-const StudentsTable: FC = () => {
+const LeadsTable: FC = () => {
   return (
     <>
       <div className='row gy-5 g-xl-8'>
@@ -63,4 +63,4 @@ const StudentsTable: FC = () => {
   )
 }
 
-export default StudentsTable
+export default LeadsTable
