@@ -83,7 +83,7 @@ export function AsideMenuMain() {
       <AsideMenuItemWithSub
         to='/crafted/leads/overview'
         title='Leads'
-        icon='/media/icons/duotone/General/User.svg'
+        icon='/media/icons/duotone/General/Hidden.svg'
         fontIcon='bi-person'
       >
         <AsideMenuItem to='/crafted/leads/overview/' title='Overview' hasBullet={true} />
