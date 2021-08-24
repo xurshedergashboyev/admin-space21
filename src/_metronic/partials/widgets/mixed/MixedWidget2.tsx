@@ -120,7 +120,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
               {/*/>*/}
               <p className='fs-1 text-success d-block my-2'>25</p>
               <a href='#' className='text-success fw-bold fs-6 mt-2'>
-                Total left / graduated students
+                Total graduated students
               </a>
             </div>
             {/* end::Col */}

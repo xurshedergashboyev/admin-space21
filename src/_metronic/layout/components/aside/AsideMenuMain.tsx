@@ -80,6 +80,14 @@ export function AsideMenuMain() {
       >
         <AsideMenuItem to='/crafted/courses/overview' title='Overview' hasBullet={true} />
       </AsideMenuItemWithSub>
+      <AsideMenuItemWithSub
+        to='/crafted/leads/overview'
+        title='Leads'
+        icon='/media/icons/duotone/General/User.svg'
+        fontIcon='bi-person'
+      >
+        <AsideMenuItem to='/crafted/leads/overview/' title='Overview' hasBullet={true} />
+      </AsideMenuItemWithSub>
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/error'*/}
       {/*  title='Errors'*/}
