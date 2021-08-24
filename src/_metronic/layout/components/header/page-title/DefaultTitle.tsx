@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React, {FC} from 'react'
 import {Link} from 'react-router-dom'
-import {useLayout} from '../../../core/LayoutProvider'
-import {usePageData} from '../../../core/PageData'
+import {useLayout} from '../../../core'
+import {usePageData} from '../../../core'
 
 const DefaultTitle: FC = () => {
   const {pageTitle, pageDescription, pageBreadcrumbs} = usePageData()
@@ -18,7 +18,7 @@ const DefaultTitle: FC = () => {
           {pageTitle}
           {pageDescription && config.pageTitle && config.pageTitle.description && (
             <>
-              <span className='h-20px border-gray-200 border-start ms-3 mx-2'></span>
+              <span className='h-20px border-gray-200 border-start ms-3 mx-2'/>
               <small className='text-muted fs-7 fw-bold my-1 ms-1'>{pageDescription}</small>
             </>
           )}
@@ -32,7 +32,7 @@ const DefaultTitle: FC = () => {
         config.pageTitle.breadCrumbs && (
           <>
             {config.pageTitle.direction === 'row' && (
-              <span className='h-20px border-gray-200 border-start mx-4'></span>
+              <span className='h-20px border-gray-200 border-start mx-4'/>
             )}
             <ul className='breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1'>
               {Array.from(pageBreadcrumbs).map((item, index) => (
@@ -48,7 +48,7 @@ const DefaultTitle: FC = () => {
                       {item.title}
                     </Link>
                   ) : (
-                    <span className='bullet bg-gray-200 w-5px h-2px'></span>
+                    <span className='bullet bg-gray-200 w-5px h-2px'/>
                   )}
                 </li>
               ))}
