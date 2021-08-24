@@ -22,19 +22,23 @@ const Toolbar1: FC = () => {
           {/* begin::Wrapper */}
           <div className='me-4'>
             {/* begin::Menu */}
-            <a
-              href='#'
-              className='btn btn-sm btn-flex btn-light btn-active-primary fw-bolder'
-              data-kt-menu-trigger='click'
-              data-kt-menu-placement='bottom-end'
-              data-kt-menu-flip='top-end'
-            >
-              <KTSVG
-                path='/media/icons/duotone/Text/Filter.svg'
-                className='svg-icon-5 svg-icon-gray-500 me-1'
-              />
-              Filter
-            </a>
+            {/*<a*/}
+            {/*  href='#'*/}
+            {/*  className='btn btn-sm btn-flex btn-light btn-active-primary fw-bolder'*/}
+            {/*  data-kt-menu-trigger='click'*/}
+            {/*  data-kt-menu-placement='bottom-end'*/}
+            {/*  data-kt-menu-flip='top-end'*/}
+            {/*>*/}
+              {/*<KTSVG*/}
+              {/*  path='/media/icons/duotone/Text/Filter.svg'*/}
+              {/*  className='svg-icon-5 svg-icon-gray-500 me-1'*/}
+              {/*/>*/}
+              <select className="form-select" name='types'>
+                <option value='English'>English</option>
+                <option value='Frontend'>Frontend</option>
+                <option value='Design'>Design</option>
+              </select>
+            {/*</a>*/}
 
             {/* end::Menu */}
           </div>
