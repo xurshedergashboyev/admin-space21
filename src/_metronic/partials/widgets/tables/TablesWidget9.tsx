@@ -13,8 +13,8 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Students</span>
-          <span className='text-muted mt-1 fw-bold fs-7'>Over 150 students</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Requests</span>
+          <span className='text-muted mt-1 fw-bold fs-7'>Over 150 requests</span>
         </h3>
         <div
           className='card-toolbar'
@@ -77,7 +77,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
                        <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
-                        Dilovar
+                        Mahliyo
                       </Link>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
                         HTML, JS, ReactJS
