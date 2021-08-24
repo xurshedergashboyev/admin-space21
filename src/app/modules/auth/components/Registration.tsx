@@ -39,7 +39,7 @@ const registrationSchema = Yup.object().shape({
   changepassword: Yup.string()
     .required('Password confirmation is required')
     .when('password', {
-      is: (val: string) => (val && val.length > 0 ? true : false),
+      is: (val: string) => (!!(val && val.length > 0)),
       then: Yup.string().oneOf([Yup.ref('password')], "Password and Confirm Password didn't match"),
     }),
   acceptTerms: Yup.bool().required('You must accept the terms and conditions'),
@@ -104,9 +104,9 @@ export function Registration() {
       {/* end::Action */}
 
       <div className='d-flex align-items-center mb-10'>
-        <div className='border-bottom border-gray-300 mw-50 w-100'></div>
+        <div className='border-bottom border-gray-300 mw-50 w-100'/>
         <span className='fw-bold text-gray-400 fs-7 mx-2'>OR</span>
-        <div className='border-bottom border-gray-300 mw-50 w-100'></div>
+        <div className='border-bottom border-gray-300 mw-50 w-100'/>
       </div>
 
       {formik.status && (
