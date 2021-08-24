@@ -1,5 +1,5 @@
 import React, {FC} from 'react'
-import {TablesWidget9} from '../../../../../_metronic/partials/widgets'
+import {TablesWidget9} from '../../../../_metronic/partials/widgets'
 
 const StudentsTable: FC = () => {
   return (
