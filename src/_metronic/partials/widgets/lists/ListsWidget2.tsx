@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import React from 'react';
+import {KTSVG, toAbsoluteUrl} from '../../../helpers';
+import {Dropdown1} from '../../content/dropdown/Dropdown1';
 
 type Props = {
   className: string
@@ -12,7 +12,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bolder text-dark'>Teachers</h3>
+        <h3 className='card-title fw-bolder text-dark'>Members</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <button
@@ -125,4 +125,4 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
   )
 }
 
-export {ListsWidget2}
+export {ListsWidget2};
