@@ -12,8 +12,8 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bolder fs-3 mb-1'>Latest Products</span>
-          <span className='text-muted mt-1 fw-bold fs-7'>More than 400 new products</span>
+          <span className='card-label fw-bolder fs-3 mb-1'>Latest Actions</span>
+          <span className='text-muted mt-1 fw-bold fs-7'>More than 400 new actions</span>
         </h3>
         <div className='card-toolbar'>
           <ul className='nav'>
@@ -60,11 +60,11 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                 {/* begin::Table head */}
                 <thead>
                   <tr className='border-0'>
-                    <th className='p-0 w-50px'></th>
-                    <th className='p-0 min-w-150px'></th>
-                    <th className='p-0 min-w-140px'></th>
-                    <th className='p-0 min-w-110px'></th>
-                    <th className='p-0 min-w-50px'></th>
+                    <th className='p-0 w-50px'/>
+                    <th className='p-0 min-w-150px'/>
+                    <th className='p-0 min-w-140px'/>
+                    <th className='p-0 min-w-110px'/>
+                    <th className='p-0 min-w-50px'/>
                   </tr>
                 </thead>
                 {/* end::Table head */}
@@ -256,11 +256,11 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                 {/* begin::Table head */}
                 <thead>
                   <tr className='border-0'>
-                    <th className='p-0 w-50px'></th>
-                    <th className='p-0 min-w-150px'></th>
-                    <th className='p-0 min-w-140px'></th>
-                    <th className='p-0 min-w-110px'></th>
-                    <th className='p-0 min-w-50px'></th>
+                    <th className='p-0 w-50px'/>
+                    <th className='p-0 min-w-150px'/>
+                    <th className='p-0 min-w-140px'/>
+                    <th className='p-0 min-w-110px'/>
+                    <th className='p-0 min-w-50px'/>
                   </tr>
                 </thead>
                 {/* end::Table head */}
@@ -384,11 +384,11 @@ const TablesWidget5: React.FC<Props> = ({className}) => {
                 {/* begin::Table head */}
                 <thead>
                   <tr className='border-0'>
-                    <th className='p-0 w-50px'></th>
-                    <th className='p-0 min-w-150px'></th>
-                    <th className='p-0 min-w-140px'></th>
-                    <th className='p-0 min-w-110px'></th>
-                    <th className='p-0 min-w-50px'></th>
+                    <th className='p-0 w-50px'/>
+                    <th className='p-0 min-w-150px'/>
+                    <th className='p-0 min-w-140px'/>
+                    <th className='p-0 min-w-110px'/>
+                    <th className='p-0 min-w-50px'/>
                   </tr>
                 </thead>
                 {/* end::Table head */}
