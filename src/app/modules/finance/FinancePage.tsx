@@ -8,7 +8,7 @@ export default function CoursesPage () {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Finance',
-      path: '/crafted/finance/overview',
+      path: '/crafted/finance/overview/',
       isSeparator: false,
       isActive: false,
     },
@@ -23,7 +23,7 @@ export default function CoursesPage () {
   return (
     <>
       <Switch>
-        <Route path="/crafted/finances/oveview/">
+        <Route path="/crafted/finance/overview/">
           <PageTitle breadcrumbs={profileBreadCrumbs}>Finance</PageTitle>
           <FinanceStatements />
           <FinanceReferrals />
