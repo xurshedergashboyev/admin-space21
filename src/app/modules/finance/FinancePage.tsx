@@ -25,6 +25,8 @@ export default function CoursesPage () {
       <Switch>
         <Route path="/crafted/finances/oveview/">
           <PageTitle breadcrumbs={profileBreadCrumbs}>Finance</PageTitle>
+          <FinanceStatements />
+          <FinanceReferrals />
         </Route>
       </Switch>
     </>
