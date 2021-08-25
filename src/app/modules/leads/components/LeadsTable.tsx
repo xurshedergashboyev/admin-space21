@@ -58,8 +58,7 @@ const LeadsTable: FC = () => {
             </li>
           </ul>
         </div>
-        <div className='row g-xxl-9'>
-          <div className='card-body pb-0'>
+          <div className='card-body pb-0' bg-white>
             <span className='fs-5 fw-bold text-gray-600 pb-5 d-block'>Last 30 day earnings calculated. Apart from arranging the order of topics.</span>
             <div className='d-flex flex-wrap justify-content-between pb-6'>
               <div className='d-flex flex-wrap'>
@@ -124,9 +123,428 @@ const LeadsTable: FC = () => {
               </div>
             </div>
           </div>
-
         </div>
-      </div>
+        <div className="card">
+          <div className="card-header card-header-stretch">
+            <div className="card-title">
+              <h3 className="m-0 text-gray-800">Statement</h3>
+            </div>
+            <div className="card-toolbar m-0">
+              <ul className="nav nav-stretch fs-5 fw-bold nav-line-tabs border-transparent" role="tablist">
+                <li className="nav-item" role="presentation">
+                  <a id="kt_referrals_year_tab" className="nav-link text-active-gray-800 active" data-bs-toggle="tab"
+                     role="tab" href="#kt_referrals_1">This Year</a>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <a id="kt_referrals_2019_tab" className="nav-link text-active-gray-800 me-4" data-bs-toggle="tab"
+                     role="tab" href="#kt_referrals_2">2019</a>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <a id="kt_referrals_2018_tab" className="nav-link text-active-gray-800 me-4" data-bs-toggle="tab"
+                     role="tab" href="#kt_referrals_3">2018</a>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <a id="kt_referrals_2017_tab" className="nav-link text-active-gray-800 ms-8" data-bs-toggle="tab"
+                     role="tab" href="#kt_referrals_4">2017</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="kt_referred_users_tab_content" className="tab-content">
+            <div id="kt_referrals_1" className="card-body p-0 tab-pane fade show active" role="tabpanel">
+              <div className="table-responsive">
+                <table className="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+                  <thead className="border-gray-200 fs-5 fw-bold bg-lighten">
+                  <tr>
+                    <th className="min-w-175px ps-9">Date</th>
+                    <th className="min-w-150px px-0">Order ID</th>
+                    <th className="min-w-350px">Details</th>
+                    <th className="min-w-125px">Amount</th>
+                    <th className="min-w-125px text-center">Invoice</th>
+                  </tr>
+                  </thead>
+                  <tbody className="fs-6 fw-bold text-gray-600">
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">102445788</td>
+                    <td>Darknight transparency 36 Icons Pack</td>
+                    <td className="text-success">$38.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 24, 2020</td>
+                    <td className="ps-0">423445721</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-2.60</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 08, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Cartoon Mobile Emoji Phone Pack</td>
+                    <td className="text-success">$76.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Sep 15, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Iphone 12 Pro Mockup Mega Bundle</td>
+                    <td className="text-success">$5.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">May 30, 2020</td>
+                    <td className="ps-0">523445943</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-1.30</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Apr 22, 2020</td>
+                    <td className="ps-0">231445943</td>
+                    <td>Parcel Shipping / Delivery Service App</td>
+                    <td className="text-success">$204.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Feb 09, 2020</td>
+                    <td className="ps-0">426445943</td>
+                    <td>Visual Design Illustration</td>
+                    <td className="text-success">$31.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">984445943</td>
+                    <td>Abstract Vusial Pack</td>
+                    <td className="text-success">$52.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Jan 04, 2020</td>
+                    <td className="ps-0">324442313</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-0.80</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="kt_referrals_2" className="card-body p-0 tab-pane fade" role="tabpanel">
+              <div className="table-responsive">
+                <table className="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+                  <thead className="border-gray-200 fs-5 fw-bold bg-lighten">
+                  <tr>
+                    <th className="min-w-175px ps-9">Date</th>
+                    <th className="min-w-150px px-0">Order ID</th>
+                    <th className="min-w-350px">Details</th>
+                    <th className="min-w-125px">Amount</th>
+                    <th className="min-w-125px text-center">Invoice</th>
+                  </tr>
+                  </thead>
+                  <tbody className="fs-6 fw-bold text-gray-600">
+                  <tr>
+                    <td className="ps-9">May 30, 2020</td>
+                    <td className="ps-0">523445943</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-1.30</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Apr 22, 2020</td>
+                    <td className="ps-0">231445943</td>
+                    <td>Parcel Shipping / Delivery Service App</td>
+                    <td className="text-success">$204.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Feb 09, 2020</td>
+                    <td className="ps-0">426445943</td>
+                    <td>Visual Design Illustration</td>
+                    <td className="text-success">$31.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">984445943</td>
+                    <td>Abstract Vusial Pack</td>
+                    <td className="text-success">$52.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Jan 04, 2020</td>
+                    <td className="ps-0">324442313</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-0.80</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">102445788</td>
+                    <td>Darknight transparency 36 Icons Pack</td>
+                    <td className="text-success">$38.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 24, 2020</td>
+                    <td className="ps-0">423445721</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-2.60</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 08, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Cartoon Mobile Emoji Phone Pack</td>
+                    <td className="text-success">$76.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Sep 15, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Iphone 12 Pro Mockup Mega Bundle</td>
+                    <td className="text-success">$5.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="kt_referrals_3" className="card-body p-0 tab-pane fade" role="tabpanel">
+              <div className="table-responsive">
+                <table className="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+                  <thead className="border-gray-200 fs-5 fw-bold bg-lighten">
+                  <tr>
+                    <th className="min-w-175px ps-9">Date</th>
+                    <th className="min-w-150px px-0">Order ID</th>
+                    <th className="min-w-350px">Details</th>
+                    <th className="min-w-125px">Amount</th>
+                    <th className="min-w-125px text-center">Invoice</th>
+                  </tr>
+                  </thead>
+                  <tbody className="fs-6 fw-bold text-gray-600">
+                  <tr>
+                    <td className="ps-9">Feb 09, 2020</td>
+                    <td className="ps-0">426445943</td>
+                    <td>Visual Design Illustration</td>
+                    <td className="text-success">$31.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">984445943</td>
+                    <td>Abstract Vusial Pack</td>
+                    <td className="text-success">$52.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Jan 04, 2020</td>
+                    <td className="ps-0">324442313</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-0.80</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Sep 15, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Iphone 12 Pro Mockup Mega Bundle</td>
+                    <td className="text-success">$5.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">102445788</td>
+                    <td>Darknight transparency 36 Icons Pack</td>
+                    <td className="text-success">$38.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 24, 2020</td>
+                    <td className="ps-0">423445721</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-2.60</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 08, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Cartoon Mobile Emoji Phone Pack</td>
+                    <td className="text-success">$76.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">May 30, 2020</td>
+                    <td className="ps-0">523445943</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-1.30</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Apr 22, 2020</td>
+                    <td className="ps-0">231445943</td>
+                    <td>Parcel Shipping / Delivery Service App</td>
+                    <td className="text-success">$204.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="kt_referrals_4" className="card-body p-0 tab-pane fade" role="tabpanel">
+              <div className="table-responsive">
+                <table className="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+                  <thead className="border-gray-200 fs-5 fw-bold bg-lighten">
+                  <tr>
+                    <th className="min-w-175px ps-9">Date</th>
+                    <th className="min-w-150px px-0">Order ID</th>
+                    <th className="min-w-350px">Details</th>
+                    <th className="min-w-125px">Amount</th>
+                    <th className="min-w-125px text-center">Invoice</th>
+                  </tr>
+                  </thead>
+                  <tbody className="fs-6 fw-bold text-gray-600">
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">102445788</td>
+                    <td>Darknight transparency 36 Icons Pack</td>
+                    <td className="text-success">$38.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 24, 2020</td>
+                    <td className="ps-0">423445721</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-2.60</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">102445788</td>
+                    <td>Darknight transparency 36 Icons Pack</td>
+                    <td className="text-success">$38.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 24, 2020</td>
+                    <td className="ps-0">423445721</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-2.60</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Feb 09, 2020</td>
+                    <td className="ps-0">426445943</td>
+                    <td>Visual Design Illustration</td>
+                    <td className="text-success">$31.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Nov 01, 2020</td>
+                    <td className="ps-0">984445943</td>
+                    <td>Abstract Vusial Pack</td>
+                    <td className="text-success">$52.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Jan 04, 2020</td>
+                    <td className="ps-0">324442313</td>
+                    <td>Seller Fee</td>
+                    <td className="text-danger">$-0.80</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 08, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Cartoon Mobile Emoji Phone Pack</td>
+                    <td className="text-success">$76.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="ps-9">Oct 08, 2020</td>
+                    <td className="ps-0">312445984</td>
+                    <td>Cartoon Mobile Emoji Phone Pack</td>
+                    <td className="text-success">$76.00</td>
+                    <td className="text-center">
+                      <button className="btn btn-light btn-sm btn-active-light-primary">Download</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
     </>
   )
 }
