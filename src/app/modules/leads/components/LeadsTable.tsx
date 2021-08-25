@@ -58,7 +58,7 @@ const LeadsTable: FC = () => {
             </li>
           </ul>
         </div>
-        <div className='card-body pb-0' bg-white>
+        <div className='card-body pb-0 bg-white'>
           <span className='fs-5 fw-bold text-gray-600 pb-5 d-block'>Last 30 day earnings calculated. Apart from arranging the order of topics.</span>
           <div className='d-flex flex-wrap justify-content-between pb-6'>
             <div className='d-flex flex-wrap'>
