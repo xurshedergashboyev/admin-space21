@@ -12,9 +12,7 @@ export function checkIsActive(pathname: string, url: string) {
     return true
   }
 
-  if (current.indexOf(url) > -1) {
-    return true
-  }
+  return current.indexOf(url) > -1;
 
-  return false
+
 }
