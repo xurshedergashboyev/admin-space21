@@ -4,10 +4,11 @@ import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Link} from 'react-router-dom'
 
 type Props = {
-  className: string
+  className: string,
+  leads: boolean
 }
 
-const TablesWidget9: React.FC<Props> = ({className}) => {
+const TablesWidget9: React.FC<Props> = ({className, leads}) => {
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
@@ -23,7 +24,7 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
           data-bs-trigger='hover'
           title='Click to add a user'
         >
-          <Link to="/crafted/account/student/info"
+          <Link to={leads ? '/'  : "/crafted/account/student/info"}
             className='btn btn-sm btn-light-primary'
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_invite_friends'
