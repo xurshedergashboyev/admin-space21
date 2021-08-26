@@ -77,7 +77,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-11.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                      <Link to={leads ? '/'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                         Mahliyo
                       </Link>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -87,7 +87,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                   </div>
                 </td>
                 <td>
-                  <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     6 months
                   </Link>
                   <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -95,7 +95,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                   </span>
                 </td>
                 <td>
-                  <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                     599 000 sums
                   </Link>
                 </td>
@@ -115,7 +115,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                 </td>
                 <td>
                   <div className='d-flex justify-content-end flex-shrink-0'>
-                    <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -123,7 +123,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                         className='svg-icon-3'
                       />
                     </Link>
-                    <Link to="/crafted/account/student/info"
+                     <Link to={leads ? '#'  : "/crafted/account/student/info"}
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                     >
                       <KTSVG
@@ -131,7 +131,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                         className='svg-icon-3'
                       />
                     </Link>
-                    <Link to="/crafted/account/student/info"
+                     <Link to={leads ? '#'  : "/crafted/account/student/info"}
                       className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                     >
                       <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
@@ -151,7 +151,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-3.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                       Maftuna
                     </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -161,7 +161,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                 </div>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   3-4 months
                 </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -169,7 +169,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                   </span>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   229 000 sums
                 </Link>
               </td>
@@ -189,7 +189,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                   <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -197,7 +197,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                   <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -205,7 +205,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                   <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
@@ -225,7 +225,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-4.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                       Maraim
                     </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -235,13 +235,13 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                 </div>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   6 months
                 </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Transportation</span>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   599 000 sums
                 </Link>
               </td>
@@ -261,7 +261,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                   <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -269,7 +269,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -277,7 +277,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
@@ -297,7 +297,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-5.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                       Mahliyo
                     </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -307,13 +307,13 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                 </div>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   2 months
                 </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Insurance</span>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   599 000 sums
                 </Link>
               </td>
@@ -333,7 +333,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -341,7 +341,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -349,7 +349,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                   <Link to="/crafted/account/student/info"
+                    <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
@@ -369,7 +369,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                     <img src={toAbsoluteUrl('/media/avatars/150-6.jpg')} alt='' />
                   </div>
                   <div className='d-flex justify-content-start flex-column'>
-                     <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                       Farrux
                     </Link>
                     <span className='text-muted fw-bold text-muted d-block fs-7'>
@@ -379,13 +379,13 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                 </div>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   6 months
                 </Link>
                 <span className='text-muted fw-bold text-muted d-block fs-7'>Art Director</span>
               </td>
               <td>
-                 <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary d-block fs-6'>
+                  <Link to={leads ? '#'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary d-block fs-6'>
                   1 000 000 sums
                 </Link>
               </td>
@@ -405,7 +405,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
               </td>
               <td>
                 <div className='d-flex justify-content-end flex-shrink-0'>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -413,7 +413,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
                   >
                     <KTSVG
@@ -421,7 +421,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       className='svg-icon-3'
                     />
                   </Link>
-                  <Link to="/crafted/account/student/info"
+                   <Link to={leads ? '#'  : "/crafted/account/student/info"}
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'
                   >
                     <KTSVG path='/media/icons/duotone/General/Trash.svg' className='svg-icon-3' />
