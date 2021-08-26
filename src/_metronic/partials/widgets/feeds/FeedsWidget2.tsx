@@ -25,7 +25,7 @@ const FeedsWidget2: React.FC<Props> = ({className}) => {
             {/* begin::Info */}
             <div className='d-flex flex-column'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bolder'>
-                Nick Logan
+                Muhammad Zakirov
               </a>
 
               <span className='text-gray-400 fw-bold'>PHP, SQLite, Artisan CLI</span>
