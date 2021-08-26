@@ -682,14 +682,9 @@ export const FinanceReferrals: FC = () => {
 
                     <div className='text-gray-400'>Lead by
                       <a href='#'>Kendell Trevor</a></div>
-
                   </div>
-
-
                   <a href='#' className='btn btn-bg-light btn-active-color-primary btn-sm'>View</a>
-
                 </div>
-
               </div>
 
 
@@ -1077,12 +1072,8 @@ export const FinanceReferrals: FC = () => {
                       <button type='submit' className='btn btn-sm btn-primary' data-kt-menu-dismiss='true'>Apply
                       </button>
                     </div>
-
                   </div>
-
                 </div>
-
-
               </div>
 
 
