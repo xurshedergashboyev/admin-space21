@@ -2,6 +2,7 @@
   "name": "demo1",
   "version": "8.0.19",
   "private": false,
+  "homepage": "admin-space21.vercel.app/dashboard",
   "dependencies": {
     "@formatjs/intl-pluralrules": "^4.0.28",
     "@formatjs/intl-relativetimeformat": "^9.1.7",
