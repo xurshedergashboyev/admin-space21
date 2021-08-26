@@ -77,7 +77,7 @@ const TablesWidget9: React.FC<Props> = ({className, leads}) => {
                       <img src={toAbsoluteUrl('/media/avatars/150-11.jpg')} alt='' />
                     </div>
                     <div className='d-flex justify-content-start flex-column'>
-                       <Link to="/crafted/account/student/info" className='text-dark fw-bolder text-hover-primary fs-6'>
+                      <Link to={leads ? '/'  : "/crafted/account/student/info"} className='text-dark fw-bolder text-hover-primary fs-6'>
                         Mahliyo
                       </Link>
                       <span className='text-muted fw-bold text-muted d-block fs-7'>

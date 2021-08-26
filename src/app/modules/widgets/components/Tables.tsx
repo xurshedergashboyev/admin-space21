@@ -82,7 +82,7 @@ const Tables: FC = () => {
       </div>
       {/* end::Row */}
 
-      <TablesWidget9 className='mb-5 mb-xl-8' />
+      <TablesWidget9 leads={false} className='mb-5 mb-xl-8' />
 
       <TablesWidget10 className='mb-5 mb-xl-8' />
 
