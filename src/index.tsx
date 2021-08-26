@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+// Redux management
 // https://github.com/rt2zz/redux-persist
 import {PersistGate} from 'redux-persist/integration/react'
 import {Provider} from 'react-redux'
