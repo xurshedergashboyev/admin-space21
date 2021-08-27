@@ -88,11 +88,16 @@ export function AsideMenuMain() {
       >
         <AsideMenuItem to='/crafted/leads/overview/' title='Overview' hasBullet={true} />
       </AsideMenuItemWithSub>
-
       <AsideMenuItem
         to='/crafted/finance/overview/'
         icon='/media/icons/duotone/Shopping/Bitcoin.svg'
         title='Finance'
+        fontIcon='bi-app-indicator'
+      />
+      <AsideMenuItem
+        to='/crafted/task-management/overview/'
+        icon='/media/icons/duotone/Files/File.svg'
+        title='Task Management'
         fontIcon='bi-app-indicator'
       />
       {/*<AsideMenuItemWithSub*/}

@@ -44,4 +44,4 @@ const Routes: FC = () => {
   )
 }
 
-export {Routes}
+export {Routes};

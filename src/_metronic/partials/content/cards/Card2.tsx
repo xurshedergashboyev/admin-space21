@@ -75,9 +75,8 @@ const Card2: FC<Props> = ({
             className={`bg-${statusColor} rounded h-4px`}
             role='progressbar'
             style={{width: `${progress}%`}}
-          ></div>
+          />
         </div>
-
         <UsersList users={users} />
       </div>
     </Link>
