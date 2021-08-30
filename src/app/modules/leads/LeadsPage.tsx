@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 import LeadsTable from './components/LeadsTable'
 import DragApp from './components/DragApp'
+import SecondDrag from './components/SecondDrag'
 // import {TeachersOverview} from './components/TeachersOverview'
 
 const accountBreadCrumbs: Array<PageLink> = [
@@ -32,6 +33,7 @@ const LeadsPage: React.FC = () => {
           <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
           <LeadsTable />
           <DragApp />
+          <SecondDrag />
         </Route>
       </Switch>
     </>
