@@ -112,7 +112,7 @@ const TaskItemsContainer: FC = () => {
                 <TaskItemsProgress
                   name={board.title}
                   progress={board.title}
-                  borderColor={'danger'}
+                  borderColor={board.color}
                 />
                 {board.items.map((b) => (
                   <TasksItem
