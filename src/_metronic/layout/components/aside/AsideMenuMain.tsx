@@ -45,14 +45,14 @@ export function AsideMenuMain() {
           />
         </AsideMenuItemWithSub>
         // commented
-        <AsideMenuItemWithSub to='/crafted/pages/wizards' title='Wizards' hasBullet={true}>
-          <AsideMenuItem
-            to='/crafted/pages/wizards/horizontal'
-            title='Horizontal'
-            hasBullet={true}
-          />
-          <AsideMenuItem to='/crafted/pages/wizards/vertical' title='Vertical' hasBullet={true} />
-        </AsideMenuItemWithSub>
+        {/*<AsideMenuItemWithSub to='/crafted/pages/wizards' title='Wizards' hasBullet={true}>*/}
+        {/*  <AsideMenuItem*/}
+        {/*    to='/crafted/pages/wizards/horizontal'*/}
+        {/*    title='Horizontal'*/}
+        {/*    hasBullet={true}*/}
+        {/*  />*/}
+        {/*  <AsideMenuItem to='/crafted/pages/wizards/vertical' title='Vertical' hasBullet={true} />*/}
+        {/*</AsideMenuItemWithSub>*/}
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
         to='/crafted/accounts/teachers/overview'
