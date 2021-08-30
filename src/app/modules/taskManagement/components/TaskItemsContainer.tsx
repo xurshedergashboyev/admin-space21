@@ -1,34 +1,13 @@
 import React, {FC, useState} from 'react'
-import {TaskItemsColumn} from './TaskItemsColumn'
 import {TaskItemsProgress} from './TaskItemsProgress'
 import {TasksItem} from './TasksItem'
 import {TaskUserIcon} from './TaskUserIcon'
+import {data} from './data'
 
 const users1: Array<TaskUserIcon> = [
   {name: 'Khurshed Ergashbaev', avatar: '/media/avatars/150-1.jpg'},
   {name: 'Muhammad Zakirov', avatar: '/media/avatars/150-2.jpg'},
   {name: 'Maraim Tukhtasunov', initials: 'S', color: 'primary'},
-]
-
-const data = [
-  {
-    id: 1,
-    title: 'To Do',
-    items: [
-      {id: 1, title: 'Hello'},
-      {id: 2, title: 'Xurshed'},
-      {id: 3, title: 'Maraim'},
-    ],
-  },
-  {
-    id: 2,
-    title: 'In process',
-    items: [
-      {id: 4, title: 'Abdurshid'},
-      {id: 5, title: 'Bye Bye'},
-    ],
-  },
-  {id: 3, title: 'Done', items: [{id: 6, title: 'Drag'}]},
 ]
 
 const TaskItemsContainer: FC = () => {
@@ -39,18 +18,12 @@ const TaskItemsContainer: FC = () => {
   const dragOver = (e: any) => {
     e.preventDefault()
     if (e.target.className == 'item') {
-      e.target.style.boxShadow = '0px 3px 3px gray '
+      e.target.style.backgroundColor = '#ffbf2b'
     }
-  }
-  const dragLeave = (e: any) => {
-    e.target.style.boxShadow = '0px 3px 3px gray '
   }
   const dragStart = (e: any, board: any, i: any) => {
     setCurrentBoard(board)
     setCurrentItem(i)
-  }
-  const dragEnd = (e: any) => {
-    e.target.style.boxShadow = '0px 3px 3px gray'
   }
   const drop = (e: any, board: any, i: any) => {
     e.preventDefault()
@@ -141,30 +114,23 @@ const TaskItemsContainer: FC = () => {
                   progress={board.title}
                   borderColor={'danger'}
                 />
-                <TasksItem
-                  icon='/media/svg/brand-logos/plurk.svg'
-                  badgeColor='primary'
-                  status='In Progress'
-                  statusColor='primary'
-                  title='Fitnes App'
-                  description='CRM App application to HR efficiency'
-                  date='August 30, 2021'
-                  budget='$284,900.00'
-                  progress={'50'}
-                  users={users1}
-                />
-                <TasksItem
-                  icon='/media/svg/brand-logos/plurk.svg'
-                  badgeColor='primary'
-                  status='In Progress'
-                  statusColor='primary'
-                  title='Fitnes App'
-                  description='CRM App application to HR efficiency'
-                  date='August 30, 2021'
-                  budget='$284,900.00'
-                  progress={'50'}
-                  users={users1}
-                />
+                {board.items.map((b) => (
+                  <TasksItem
+                    onDragOver={(e: any) => dragOver(e)}
+                    onDragStart={(e: any) => dragStart(e, board, b)}
+                    onDrop={(e: any) => drop(e, board, b)}
+                    icon='/media/svg/brand-logos/plurk.svg'
+                    badgeColor='primary'
+                    status='In Progress'
+                    statusColor='primary'
+                    title={b.title}
+                    description='CRM App application to HR efficiency'
+                    date='August 30, 2021'
+                    budget='$284,900.00'
+                    progress={'50'}
+                    users={users1}
+                  />
+                ))}
               </div>
             </div>
             {/*<div className='row g-6 g-xl-9'>*/}

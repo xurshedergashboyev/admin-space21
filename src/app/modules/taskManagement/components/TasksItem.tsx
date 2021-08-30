@@ -21,24 +21,34 @@ type Props = {
   budget: string
   progress: string
   users?: Array<TaskIconUser>
+  onDragStart: any
+  onDragOver: any
+  onDrop: any
 }
 
 const TasksItem: FC<Props> = ({
-                                icon,
-                                badgeColor,
-                                status,
-                                statusColor,
-                                title,
-                                description,
-                                date,
-                                budget,
-                                progress,
-                                users,
-                              }) => {
+  icon,
+  badgeColor,
+  status,
+  statusColor,
+  title,
+  description,
+  date,
+  budget,
+  progress,
+  users,
+  onDrop,
+  onDragOver,
+  onDragStart,
+}) => {
   return (
     <Link
       to='/crafted/pages/profile/overview'
       className='card border border-2 border-gray-300 border-hover mb-5'
+      draggable={'true'}
+      onDrop={onDrop}
+      onDragStart={onDragStart}
+      onDragOver={onDragOver}
     >
       <div className='card-header border-0'>
         <div className='card-title m-0'>
@@ -48,12 +58,8 @@ const TasksItem: FC<Props> = ({
         </div>
 
         <div className='card-toolbar'>
-            <span className={`badge badge-light-${badgeColor} fw-bolder`}>
-              {status}
-            </span>
-          <span className={`badge badge-light-${badgeColor} fw-bolder mx-2`}>
-              +
-            </span>
+          <span className={`badge badge-light-${badgeColor} fw-bolder`}>{status}</span>
+          <span className={`badge badge-light-${badgeColor} fw-bolder mx-2`}>+</span>
         </div>
       </div>
 

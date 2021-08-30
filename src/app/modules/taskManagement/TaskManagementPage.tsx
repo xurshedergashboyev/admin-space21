@@ -1,10 +1,9 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
-import {TaskItemsColumn} from './components/TaskItemsColumn'
 import {TaskItemsContainer} from './components/TaskItemsContainer'
 
-export default function CoursesPage () {
+export default function CoursesPage() {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Task Management',
@@ -23,7 +22,7 @@ export default function CoursesPage () {
   return (
     <>
       <Switch>
-        <Route path="/crafted/task-management/overview">
+        <Route path='/crafted/task-management/overview'>
           <PageTitle breadcrumbs={profileBreadCrumbs}>Task Management</PageTitle>
           <TaskItemsContainer />
         </Route>
@@ -31,5 +30,3 @@ export default function CoursesPage () {
     </>
   )
 }
-
-
