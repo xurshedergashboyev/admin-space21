@@ -68,6 +68,7 @@ const TaskItemsContainer: FC = () => {
       })
     )
   }
+  // @ts-ignore
   return (
     <>
       <div className='d-flex flex-wrap flex-stack mb-6'>
@@ -121,7 +122,7 @@ const TaskItemsContainer: FC = () => {
                     onDrop={(e: any) => drop(e, board, b)}
                     icon='/media/svg/brand-logos/plurk.svg'
                     badgeColor='primary'
-                    status='In Progress'
+                    status='Hot'
                     statusColor='primary'
                     title={b.title}
                     description='CRM App application to HR efficiency'
