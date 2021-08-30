@@ -19,7 +19,7 @@ export function AsideMenuMain() {
       <AsideMenuItem
         to='/builder'
         icon='/media/icons/duotone/Interface/Settings-02.svg'
-        title='Layout Builder'
+        title='Settings'
         fontIcon='bi-layers'
       />
       <div className='menu-item'>
@@ -139,7 +139,7 @@ export function AsideMenuMain() {
       </AsideMenuItemWithSub>
       <div className='menu-item'>
         <div className='menu-content'>
-          <div className='separator mx-1 my-4'/>
+          <div className='separator mx-1 my-4' />
         </div>
       </div>
       <div className='menu-item'>

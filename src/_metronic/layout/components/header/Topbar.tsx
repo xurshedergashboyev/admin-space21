@@ -66,7 +66,7 @@ const Topbar: FC = () => {
             className={toolbarButtonIconSizeClass}
           />
 
-          <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink'></span>
+          <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink' />
         </div>
         {/* end::Menu wrapper */}
       </div>

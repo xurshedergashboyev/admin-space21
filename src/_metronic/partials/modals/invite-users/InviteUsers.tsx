@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {FC} from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {KTSVG} from '../../../helpers'
 
 const InviteUsers: FC = () => {
   const users = [
@@ -108,6 +108,10 @@ const InviteUsers: FC = () => {
     },
   ]
 
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+  }
+
   return (
     <div className='modal fade' id='kt_modal_invite_friends' aria-hidden='true'>
       <div className='modal-dialog mw-650px'>
@@ -118,7 +122,10 @@ const InviteUsers: FC = () => {
             </div>
           </div>
 
-          <div className='modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15'>
+          <form
+            onSubmit={handleSubmit}
+            className='modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15 d-flex justify-content-center flex-md-column'
+          >
             <div className='text-center mb-13'>
               <h1 className='mb-3'>Invite a Friend</h1>
 
@@ -131,55 +138,27 @@ const InviteUsers: FC = () => {
                 .
               </div>
             </div>
-
-            <div className='btn btn-light-primary fw-bolder w-100 mb-8'>
-              <img
-                alt='Logo'
-                src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-                className='h-20px me-3'
-              />
-              Invite Gmail Contacts
-            </div>
-
-            <div className='separator d-flex flex-center mb-8'>
-              <span className='text-uppercase bg-body fs-7 fw-bold text-muted px-3'>or</span>
-            </div>
-
             {/*<textarea*/}
             {/*  className='form-control form-control-solid mb-8'*/}
             {/*  rows={3}*/}
             {/*  placeholder='Type or paste emails here'*/}
             {/*/>*/}
-            <label htmlFor='input' className="mb-2 fs-4">
+            <label htmlFor='input' className='mb-2 fs-4'>
               Name
             </label>
-            <input
-              required
-              type={"name"}
-              className="form-control form-control-solid mb-8"
-            />
-            <label htmlFor='input' className="mb-2 fs-4">
+            <input required type={'name'} className='form-control form-control-solid mb-8' />
+            <label htmlFor='input' className='mb-2 fs-4'>
               Email
             </label>
-            <input
-              type={"email"}
-              className="form-control form-control-solid mb-8"
-            />
-            <label htmlFor='input' className="mb-2 fs-4">
+            <input type={'email'} className='form-control form-control-solid mb-8' />
+            <label htmlFor='input' className='mb-2 fs-4'>
               Phone
             </label>
-            <input
-              type="number"
-              required
-              className="form-control form-control-solid mb-8"
-            />
-            <label htmlFor='input' className="mb-2 fs-4">
+            <input type='number' required className='form-control form-control-solid mb-8' />
+            <label htmlFor='input' className='mb-2 fs-4'>
               Course
             </label>
-            <input
-              required
-              className="form-control form-control-solid mb-8"
-            />
+            <input required className='form-control form-control-solid mb-8' />
             {/*<div className='mb-10'>*/}
             {/*  <div className='fs-6 fw-bold mb-2'>Your Invitations</div>*/}
 
@@ -247,7 +226,8 @@ const InviteUsers: FC = () => {
                 <span className='form-check-label fw-bold text-muted'>Allowed</span>
               </label>
             </div>
-          </div>
+            <div className='btn btn-primary my-5'>Submit</div>
+          </form>
         </div>
       </div>
     </div>

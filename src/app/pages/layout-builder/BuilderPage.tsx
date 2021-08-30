@@ -131,7 +131,6 @@ const BuilderPage: React.FC = () => {
           </ul>
         </div>
         {/* end::Header */}
-
         {/* begin::Form */}
         <form className='form'>
           {/* begin::Body */}
@@ -161,7 +160,6 @@ const BuilderPage: React.FC = () => {
                       />
                       <span className='form-check-label text-muted'>Desktop</span>
                     </label>
-
                     <label className='form-check form-check-custom form-check-solid form-switch mb-3'>
                       <input
                         className='form-check-input'
@@ -181,7 +179,6 @@ const BuilderPage: React.FC = () => {
                       />
                       <span className='form-check-label text-muted'>Tablet & Mobile</span>
                     </label>
-
                     <div className='form-text text-muted'>Enable fixed header</div>
                   </div>
                 </div>
@@ -230,7 +227,6 @@ const BuilderPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-
               <div className={clsx('tab-pane', {active: tab === 'Toolbar'})}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Display:</label>
@@ -277,7 +273,6 @@ const BuilderPage: React.FC = () => {
                       />
                       <span className='form-check-label text-muted'>Desktop</span>
                     </label>
-
                     <label className='form-check form-check-custom form-check-solid form-switch mb-3'>
                       <input
                         className='form-check-input'
@@ -541,7 +536,6 @@ const BuilderPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-
               <div className={clsx('tab-pane', {active: tab === 'Footer'})}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Width:</label>
@@ -573,14 +567,14 @@ const BuilderPage: React.FC = () => {
           {/* begin::Footer */}
           <div className='card-footer py-6'>
             <div className='row'>
-              <div className='col-lg-3'></div>
+              <div className='col-lg-3' />
               <div className='col-lg-9'>
                 <button type='button' onClick={updateConfig} className='btn btn-primary me-2'>
                   {!configLoading && <span className='indicator-label'>Preview</span>}
                   {configLoading && (
                     <span className='indicator-progress' style={{display: 'block'}}>
                       Please wait...{' '}
-                      <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
+                      <span className='spinner-border spinner-border-sm align-middle ms-2' />
                     </span>
                   )}
                 </button>
@@ -595,7 +589,7 @@ const BuilderPage: React.FC = () => {
                   {resetLoading && (
                     <span className='indicator-progress' style={{display: 'block'}}>
                       Please wait...{' '}
-                      <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
+                      <span className='spinner-border spinner-border-sm align-middle ms-2' />
                     </span>
                   )}
                 </button>

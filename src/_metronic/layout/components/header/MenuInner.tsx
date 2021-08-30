@@ -9,7 +9,7 @@ export function MenuInner() {
   return (
     <>
       <MenuItem title={intl.formatMessage({id: 'MENU.DASHBOARD'})} to='/dashboard' />
-      <MenuItem title='Layout Builder' to='/builder' />
+      <MenuItem title='Settings' to='/builder' />
       <MenuInnerWithSub
         title='Crafted'
         to='/crafted'
@@ -33,7 +33,11 @@ export function MenuInner() {
             menuPlacement='right-start'
             menuTrigger={`{default:'click', lg: 'hover'}`}
           >
-            <MenuItem to='/crafted/pages/profile/overview' title='TeachersOverview' hasBullet={true} />
+            <MenuItem
+              to='/crafted/pages/profile/overview'
+              title='TeachersOverview'
+              hasBullet={true}
+            />
             <MenuItem to='/crafted/pages/profile/projects' title='Projects' hasBullet={true} />
             <MenuItem to='/crafted/pages/profile/campaigns' title='Campaigns' hasBullet={true} />
             <MenuItem to='/crafted/pages/profile/documents' title='Documents' hasBullet={true} />
