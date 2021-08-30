@@ -22,8 +22,8 @@ const loginSchema = Yup.object().shape({
 })
 
 const initialValues = {
-  email: 'space21.io',
-  password: 'wearespace21',
+  email: 'admin@demo.com',
+  password: 'demo',
 }
 
 /*
@@ -81,8 +81,7 @@ export function Login() {
       ) : (
         <div className='mb-10 bg-light-info p-8 rounded'>
           <div className='text-info'>
-            Use account <strong>space21.io</strong> and password <strong>demo</strong> to
-            continue.
+            Use account <strong>space21.io</strong> and password <strong>demo</strong> to continue.
           </div>
         </div>
       )}
@@ -166,7 +165,7 @@ export function Login() {
           {loading && (
             <span className='indicator-progress' style={{display: 'block'}}>
               Please wait...
-              <span className='spinner-border spinner-border-sm align-middle ms-2'/>
+              <span className='spinner-border spinner-border-sm align-middle ms-2' />
             </span>
           )}
         </button>
