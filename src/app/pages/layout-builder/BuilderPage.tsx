@@ -6,7 +6,7 @@ import {getLayout, ILayout, LayoutSetup, useLayout} from '../../../_metronic/lay
 
 const BuilderPage: React.FC = () => {
   const {setLayout} = useLayout()
-  const [tab, setTab] = useState('Header')
+  const [tab, setTab] = useState('General')
   const [config, setConfig] = useState<ILayout>(getLayout())
   const [configLoading, setConfigLoading] = useState<boolean>(false)
   const [resetLoading, setResetLoading] = useState<boolean>(false)
@@ -76,6 +76,15 @@ const BuilderPage: React.FC = () => {
           >
             <li className='nav-item'>
               <a
+                className={clsx(`nav-link`, {active: tab === 'General'})}
+                onClick={() => setTab('General')}
+                role='tab'
+              >
+                General
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a
                 className={clsx(`nav-link`, {active: tab === 'Header'})}
                 onClick={() => setTab('Header')}
                 role='tab'
@@ -136,6 +145,68 @@ const BuilderPage: React.FC = () => {
           {/* begin::Body */}
           <div className='card-body'>
             <div className='tab-content pt-3'>
+              <div className={clsx('tab-pane', {active: tab === 'General'})}>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Currency:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>Dollar</option>
+                      <option value='sum'>Sum</option>
+                      <option value='euro'>Euro</option>
+                      <option value='rubl'>Rubl</option>
+                    </select>
+                    <div className='form-text text-muted'>
+                      Select currency for handling payments.
+                    </div>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Language:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>English</option>
+                      <option value='sum'>Russian</option>
+                      <option value='euro'>Uzbek</option>
+                      <option value='rubl'>Tajik</option>
+                      <option value='rubl'>Spanish</option>
+                      <option value='rubl'>Chinese</option>
+                    </select>
+                    <div className='form-text text-muted'>Select language</div>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Rounding type:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>Clipping</option>
+                      <option value='sum'>Mathematical</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Company name:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <input
+                      className='form-input form-control'
+                      value='IBS School'
+                      name='company name'
+                      onChange={(e) => e.target.name}
+                    />
+                  </div>
+                </div>
+              </div>
               <div className={clsx('tab-pane', {active: tab === 'Header'})}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Fixed Header:</label>
