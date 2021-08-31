@@ -25,7 +25,6 @@ const CoursesWrapper: FC = () => (
           description='Flats, Shared Rooms, Duplex'
         />
       </div>
-
       <div className='col-xl-4'>
         <StatisticsWidget5
           className='card-xl-stretch mb-5 mb-xl-8'
@@ -58,7 +57,6 @@ const CoursesWrapper: FC = () => (
           description='Flats, Shared Rooms, Duplex'
         />
       </div>
-
       <div className='col-xl-4'>
         <StatisticsWidget5
           className='card-xl-stretch mb-5 mb-xl-8'
