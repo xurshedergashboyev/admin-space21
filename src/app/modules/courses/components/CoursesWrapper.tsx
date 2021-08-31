@@ -4,11 +4,10 @@ import {
   MixedWidget10,
   MixedWidget11,
   MixedWidget3,
-  MixedWidget7, StatisticsWidget5, TablesWidget9,
+  MixedWidget7,
+  StatisticsWidget5,
+  TablesWidget9,
 } from '../../../../_metronic/partials/widgets'
-import {Connections} from '../../profile/components/Connections'
-import {StatisticsCourse} from './StatisticsCourse'
-import {MixedPieCourse} from './MixedPieCourse'
 
 const CoursesWrapper: FC = () => (
   <>
@@ -82,4 +81,4 @@ const CoursesWrapper: FC = () => (
     {/* end::Row */}
   </>
 )
-export {CoursesWrapper};
+export {CoursesWrapper}
