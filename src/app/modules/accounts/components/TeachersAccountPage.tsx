@@ -1,7 +1,7 @@
-import React from 'react';
-import {Route, Switch} from 'react-router-dom';
-import {PageLink, PageTitle} from '../../../../_metronic/layout/core';
-import {Settings} from './settings/Settings';
+import React from 'react'
+import {Route, Switch} from 'react-router-dom'
+import {PageLink, PageTitle} from '../../../../_metronic/layout/core'
+import {Settings} from './settings/Settings'
 import {Connections} from '../../profile/components/Connections'
 
 const accountBreadCrumbs: Array<PageLink> = [
@@ -23,17 +23,12 @@ const TeachersAccountPage: React.FC = () => {
   return (
     <>
       <Switch>
-        {/*<Route path='/crafted/account/teachers/overview'>*/}
-        {/*  <PageTitle breadcrumbs={accountBreadCrumbs}>Teachers</PageTitle>*/}
-        {/*  <TeachersOverview />*/}
-        {/*</Route>*/}
         <Route path='/crafted/account/teachers/overview/'>
           <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
           <Connections />
-          {/*<StudentsOverview />*/}
         </Route>
 
-        <Route path="/crafted/account/teachers/settings/">
+        <Route path='/crafted/account/teachers/settings/'>
           <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
           <Settings />
         </Route>
@@ -44,4 +39,4 @@ const TeachersAccountPage: React.FC = () => {
   )
 }
 
-export default TeachersAccountPage;
+export default TeachersAccountPage
