@@ -1,13 +1,5 @@
 import React, {FC} from 'react'
-import {
-  ListsWidget1,
-  MixedWidget10,
-  MixedWidget11,
-  MixedWidget3,
-  MixedWidget7,
-  StatisticsWidget5,
-  TablesWidget9,
-} from '../../../../_metronic/partials/widgets'
+import {StatisticsWidget5, TablesWidget9} from '../../../../_metronic/partials/widgets'
 
 const CoursesWrapper: FC = () => (
   <>
