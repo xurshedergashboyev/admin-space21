@@ -3,7 +3,7 @@ import {ILayout} from './LayoutModels'
 export const DefaultLayoutConfig: ILayout = {
   main: {
     type: 'default',
-    primaryColor: '#009EF7',
+    primaryColor: '#ffbf2b',
     darkSkinEnabled: true,
   },
   loader: {

@@ -85,6 +85,15 @@ const BuilderPage: React.FC = () => {
             </li>
             <li className='nav-item'>
               <a
+                className={clsx(`nav-link`, {active: tab === 'Notifications'})}
+                onClick={() => setTab('Notifications')}
+                role='tab'
+              >
+                Notifications
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a
                 className={clsx(`nav-link`, {active: tab === 'Header'})}
                 onClick={() => setTab('Header')}
                 role='tab'
@@ -147,6 +156,17 @@ const BuilderPage: React.FC = () => {
             <div className='tab-content pt-3'>
               <div className={clsx('tab-pane', {active: tab === 'General'})}>
                 <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Company name:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <input
+                      className='form-input form-control'
+                      value='IBS School'
+                      name='company name'
+                      onChange={(e) => e.target.name}
+                    />
+                  </div>
+                </div>
+                <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Currency:</label>
                   <div className='col-lg-9 col-xl-4'>
                     <select
@@ -196,14 +216,154 @@ const BuilderPage: React.FC = () => {
                   </div>
                 </div>
                 <div className='row mb-10'>
-                  <label className='col-lg-3 col-form-label text-lg-end'>Company name:</label>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Corporate e-mail:</label>
                   <div className='col-lg-9 col-xl-4'>
                     <input
                       className='form-input form-control'
-                      value='IBS School'
+                      value='xurshedergashboyev@gmail.com'
                       name='company name'
                       onChange={(e) => e.target.name}
                     />
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Time zone:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>Tashkent/Uzbekistan</option>
+                      <option value='sum'>Moscow/Russian</option>
+                      <option value='sum'>Africa/Abidjan</option>
+                      <option value='sum'>America/Adak</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className={clsx('tab-pane', {active: tab === 'Notifications'})}>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>About debtors</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>From all clients</option>
+                      <option value='sum'>From only today's classes</option>
+                      <option value='euro'>No notifications</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>The debtor is:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>There is debt in at least one account</option>
+                      <option value='sum'>There is debt in at least one account</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>No subscription:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>Only if today is a lesson</option>
+                      <option value='dollar'>Of all active clients</option>
+                      <option value='sum'>No notifications</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Duplicate clients:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <select
+                      className='form-select form-select-solid'
+                      name='layout-builder[layout][header][width]'
+                      onChange={(e) => e.target}
+                    >
+                      <option value='dollar'>Do not notify</option>
+                      <option value='sum'>If the phone number matches</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='row mb-10'>
+                  <label className='col-lg-3 col-form-label text-lg-end'>Other notices:</label>
+                  <div className='col-lg-9 col-xl-4'>
+                    <div className='form-check form-check-custom form-check-solid form-switch mb-2'>
+                      <label className='form-check form-check-custom form-check-solid form-switch mb-5'>
+                        <input
+                          className='form-check-input'
+                          type='checkbox'
+                          name='layout-builder[layout][header][fixed][desktop]'
+                          checked={config.header.fixed.desktop}
+                        />
+                        <span className='form-check-label text-muted'>User tasks for today</span>
+                      </label>
+                    </div>
+
+                    <div className='form-check form-check-custom form-check-solid form-switch mb-2'>
+                      <label className='form-check form-check-custom form-check-solid form-switch mb-5'>
+                        <input
+                          className='form-check-input'
+                          type='checkbox'
+                          name='layout-builder[layout][header][fixed][desktop]'
+                          checked={false}
+                        />
+                        <span className='form-check-label text-muted'>Overdue user tasks</span>
+                      </label>
+                    </div>
+
+                    <div className='form-check form-check-custom form-check-solid form-switch mb-2'>
+                      <label className='form-check form-check-custom form-check-solid form-switch mb-5'>
+                        <input
+                          className='form-check-input'
+                          type='checkbox'
+                          name='layout-builder[layout][header][fixed][desktop]'
+                          checked={config.header.fixed.desktop}
+                        />
+                        <span className='form-check-label text-muted'>
+                          Lessons learned yesterday
+                        </span>
+                      </label>
+                    </div>
+
+                    <div className='form-check form-check-custom form-check-solid form-switch mb-2'>
+                      <label className='form-check form-check-custom form-check-solid form-switch mb-5'>
+                        <input
+                          className='form-check-input'
+                          type='checkbox'
+                          name='layout-builder[layout][header][fixed][desktop]'
+                          checked={config.header.fixed.desktop}
+                        />
+                        <span className='form-check-label text-muted'>
+                          Notification of homework
+                        </span>
+                      </label>
+                    </div>
+                    <div className='form-check form-check-custom form-check-solid form-switch mb-2'>
+                      <label className='form-check form-check-custom form-check-solid form-switch mb-5'>
+                        <input
+                          className='form-check-input'
+                          type='checkbox'
+                          name='layout-builder[layout][header][fixed][desktop]'
+                          checked={false}
+                        />
+                        <span className='form-check-label text-muted'>
+                          1 lesson left in the account
+                        </span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
