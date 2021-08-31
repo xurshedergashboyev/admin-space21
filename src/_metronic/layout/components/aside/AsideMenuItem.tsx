@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import clsx from 'clsx'
 import {Link} from 'react-router-dom'
 import {useLocation} from 'react-router'
@@ -13,14 +13,7 @@ type Props = {
   hasBullet?: boolean
 }
 
-const AsideMenuItem: React.FC<Props> = ({
-  children,
-  to,
-  title,
-  icon,
-  fontIcon,
-  hasBullet = false,
-}) => {
+const AsideMenuItem: FC<Props> = ({children, to, title, icon, fontIcon, hasBullet = false}) => {
   const {pathname} = useLocation()
   const isActive = checkIsActive(pathname, to)
   const {config} = useLayout()
@@ -31,7 +24,7 @@ const AsideMenuItem: React.FC<Props> = ({
       <Link className={clsx('menu-link without-sub', {active: isActive})} to={to}>
         {hasBullet && (
           <span className='menu-bullet'>
-            <span className='bullet bullet-dot'/>
+            <span className='bullet bullet-dot' />
           </span>
         )}
         {icon && aside.menuIcon === 'svg' && (
@@ -39,7 +32,7 @@ const AsideMenuItem: React.FC<Props> = ({
             <KTSVG path={icon} className='svg-icon-2' />
           </span>
         )}
-        {fontIcon && aside.menuIcon === 'font' && <i className={clsx('bi fs-3', fontIcon)}/>}
+        {fontIcon && aside.menuIcon === 'font' && <i className={clsx('bi fs-3', fontIcon)} />}
         <span className='menu-title'>{title}</span>
       </Link>
       {children}
