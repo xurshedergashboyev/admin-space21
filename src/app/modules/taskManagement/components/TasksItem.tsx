@@ -47,7 +47,8 @@ const TasksItem: FC<Props> = ({
 }) => {
   // @ts-ignore
   return (
-    <div
+    <Link
+      to='/crafted/task-management/'
       className='card border border-2 border-gray-300 border-hover mb-5'
       draggable={'true'}
       onDrop={onDrop}
@@ -63,13 +64,11 @@ const TasksItem: FC<Props> = ({
 
         <div className='card-toolbar'>
           <span className={`badge badge-light-${badgeColor} fw-bolder`}>{status}</span>
-          <span className={`badge badge-light-${badgeColor} fw-bolder mx-2 cursor-pointer`}>
-            <KTSVG
-              path='/media/icons/duotone/General/Edit.svg'
-              className='svg-icon-1hx'
-              /* @ts-ignore */
-              onClick={handleDelete}
-            />
+          <span
+            className={`badge badge-light-${badgeColor} fw-bolder mx-2 cursor-pointer`}
+            onClick={handleDelete}
+          >
+            <KTSVG path='/media/icons/duotone/General/Edit.svg' className='svg-icon-1hx' />
           </span>
         </div>
       </div>
@@ -102,7 +101,7 @@ const TasksItem: FC<Props> = ({
         </div>
         <TaskUsers users={users} />
       </div>
-    </div>
+    </Link>
   )
 }
 

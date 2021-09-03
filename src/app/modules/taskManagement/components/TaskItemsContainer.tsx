@@ -3,7 +3,6 @@ import {TaskItemsProgress} from './TaskItemsProgress'
 import {TasksItem} from './TasksItem'
 import {TaskUserIcon} from './TaskUserIcon'
 import {data} from './data'
-import {TablesWidget9} from '../../../../_metronic/partials/widgets'
 
 const users1: Array<TaskUserIcon> = [
   {name: 'Khurshed Ergashbaev', avatar: '/media/avatars/150-1.jpg'},
@@ -73,7 +72,10 @@ const TaskItemsContainer: FC = () => {
   const handleDelete = (id: number) => {
     const remove = boards.filter((todo) => todo.id !== id)
     setBoards(remove)
-    console.log('hello')
+  }
+
+  const handleDeleteCard = (id: number, i: number) => {
+    const remove = boards[i]?.items.filter((todo) => todo.id !== id)
   }
   // @ts-ignore
   return (
@@ -123,7 +125,7 @@ const TaskItemsContainer: FC = () => {
                   borderColor={board.color}
                   handleDelete={() => handleDelete(board.id)}
                 />
-                {board.items.map((b) => (
+                {board.items.map((b, i) => (
                   <TasksItem
                     onDragOver={(e: any) => dragOver(e)}
                     onDragStart={(e: any) => dragStart(e, board, b)}
@@ -139,7 +141,7 @@ const TaskItemsContainer: FC = () => {
                     progress={'50'}
                     users={users1}
                     id={b.id}
-                    handleDelete={() => handleDelete(b.id)}
+                    handleDelete={() => handleDeleteCard(b.id, i)}
                   />
                 ))}
               </div>
