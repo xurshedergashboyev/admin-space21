@@ -142,6 +142,8 @@ const TaskItemsContainer: FC = () => {
                     users={users1}
                     id={b.id}
                     handleDelete={() => handleDeleteCard(b.id, i)}
+                    categoryColor={board.color}
+                    category={b.progress}
                   />
                 ))}
               </div>

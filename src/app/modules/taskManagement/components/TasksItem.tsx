@@ -2,6 +2,10 @@ import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {Link} from 'react-router-dom'
 import {TaskUsers} from './TaskUsers'
+import {Tooltip} from 'react-bootstrap-v5'
+import {OverlayTrigger} from 'react-bootstrap-v5'
+// @ts-ignore
+import Quill from 'quill'
 
 interface TaskIconUser {
   name: string
@@ -26,6 +30,8 @@ type Props = {
   onDrop: any
   id: number
   handleDelete: any
+  category: string
+  categoryColor: string
 }
 
 const TasksItem: FC<Props> = ({
@@ -44,7 +50,36 @@ const TasksItem: FC<Props> = ({
   onDragStart,
   id,
   handleDelete,
+  category,
+  categoryColor,
 }) => {
+  const toolbarOptions = [
+    ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+    ['blockquote', 'code-block'],
+
+    [{header: 1}, {header: 2}], // custom button values
+    [{list: 'ordered'}, {list: 'bullet'}],
+    [{script: 'sub'}, {script: 'super'}], // superscript/subscript
+    [{indent: '-1'}, {indent: '+1'}], // outdent/indent
+    [{direction: 'rtl'}], // text direction
+
+    [{size: ['small', false, 'large', 'huge']}], // custom dropdown
+    [{header: [1, 2, 3, 4, 5, 6, false]}],
+
+    [{color: []}, {background: []}], // dropdown with defaults from theme
+    [{font: []}],
+    [{align: []}],
+
+    ['clean'], // remove formatting button
+  ]
+
+  const quill = new Quill('#editor', {
+    modules: {
+      toolbar: toolbarOptions,
+    },
+    theme: 'snow',
+  })
+
   // @ts-ignore
   return (
     <div
@@ -67,8 +102,22 @@ const TasksItem: FC<Props> = ({
           <div className='modal-content'>
             <div className='modal-header'>
               <h5 className='modal-title' id='exampleModalToggleLabel2'>
-                Modal {id}
+                {title} {id}
               </h5>
+              <button className={`btn btn-${categoryColor} mx-5`}>{category}</button>
+              <TaskUsers users={users} />
+              <OverlayTrigger
+                key={status}
+                overlay={<Tooltip id={'tooltip-user-name'}>{status}</Tooltip>}
+                placement={'bottom'}
+              >
+                <div className='symbol symbol-35px symbol-circle border-danger border mx-5'>
+                  <KTSVG
+                    path='/media/icons/duotone/Design/Target.svg'
+                    className='svg-icon-2hx svg-icon-danger'
+                  />
+                </div>
+              </OverlayTrigger>
               <button
                 type='button'
                 className='btn-close'
@@ -77,7 +126,20 @@ const TasksItem: FC<Props> = ({
               />
             </div>
             <div className='modal-body'>
-              Show a second modal and hide this one with the button below.
+              <textarea
+                className='bi-textarea-resize w-50 fs-1 p-5'
+                value={title}
+                onChange={(e) => e.target.value}
+              />
+              <div id='toolbar' />
+
+              <div id='editor'>
+                <textarea
+                  value={description}
+                  onChange={(e) => e.target.value}
+                  className='bi-textarea-resize w-50 fs-1 p-5'
+                />
+              </div>
             </div>
           </div>
         </div>
