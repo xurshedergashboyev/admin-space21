@@ -3,6 +3,7 @@ import {TaskItemsProgress} from './TaskItemsProgress'
 import {TasksItem} from './TasksItem'
 import {TaskUserIcon} from './TaskUserIcon'
 import {data} from './data'
+import {TablesWidget9} from '../../../../_metronic/partials/widgets'
 
 const users1: Array<TaskUserIcon> = [
   {name: 'Khurshed Ergashbaev', avatar: '/media/avatars/150-1.jpg'},
@@ -68,10 +69,16 @@ const TaskItemsContainer: FC = () => {
       })
     )
   }
+
+  const handleDelete = (id: number) => {
+    const remove = boards.filter((todo) => todo.id !== id)
+    setBoards(remove)
+    console.log('hello')
+  }
   // @ts-ignore
   return (
     <>
-      <div className='d-flex flex-wrap flex-stack mb-6'>
+      <div className='d-flex flex-wrap flex-stack mb-6 overflow-auto'>
         <h3 className='fw-bolder my-2'>
           My Projects
           <span className='fs-6 text-gray-400 fw-bold ms-1'>Active</span>
@@ -114,6 +121,7 @@ const TaskItemsContainer: FC = () => {
                   name={board.title}
                   progress={board.title}
                   borderColor={board.color}
+                  handleDelete={() => handleDelete(board.id)}
                 />
                 {board.items.map((b) => (
                   <TasksItem
@@ -130,6 +138,8 @@ const TaskItemsContainer: FC = () => {
                     budget='$284,900.00'
                     progress={'50'}
                     users={users1}
+                    id={b.id}
+                    handleDelete={() => handleDelete(b.id)}
                   />
                 ))}
               </div>

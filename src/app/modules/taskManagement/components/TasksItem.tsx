@@ -1,5 +1,5 @@
 import React, {FC} from 'react'
-import {toAbsoluteUrl} from '../../../../_metronic/helpers'
+import {KTSVG, toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {Link} from 'react-router-dom'
 import {TaskUsers} from './TaskUsers'
 
@@ -24,6 +24,8 @@ type Props = {
   onDragStart: any
   onDragOver: any
   onDrop: any
+  id: number
+  handleDelete: any
 }
 
 const TasksItem: FC<Props> = ({
@@ -40,10 +42,12 @@ const TasksItem: FC<Props> = ({
   onDrop,
   onDragOver,
   onDragStart,
+  id,
+  handleDelete,
 }) => {
+  // @ts-ignore
   return (
-    <Link
-      to='/crafted/pages/profile/overview'
+    <div
       className='card border border-2 border-gray-300 border-hover mb-5'
       draggable={'true'}
       onDrop={onDrop}
@@ -59,7 +63,14 @@ const TasksItem: FC<Props> = ({
 
         <div className='card-toolbar'>
           <span className={`badge badge-light-${badgeColor} fw-bolder`}>{status}</span>
-          <span className={`badge badge-light-${badgeColor} fw-bolder mx-2`}>+</span>
+          <span className={`badge badge-light-${badgeColor} fw-bolder mx-2 cursor-pointer`}>
+            <KTSVG
+              path='/media/icons/duotone/General/Edit.svg'
+              className='svg-icon-1hx'
+              /* @ts-ignore */
+              onClick={handleDelete}
+            />
+          </span>
         </div>
       </div>
 
@@ -91,7 +102,7 @@ const TasksItem: FC<Props> = ({
         </div>
         <TaskUsers users={users} />
       </div>
-    </Link>
+    </div>
   )
 }
 
