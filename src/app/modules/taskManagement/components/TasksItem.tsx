@@ -63,7 +63,7 @@ const TasksItem: FC<Props> = ({
         aria-hidden='true'
         aria-labelledby='exampleModalToggleLabel2'
       >
-        <div className='modal-dialog modal-dialog-centered'>
+        <div className='modal-dialog modal-fullscreen'>
           <div className='modal-content'>
             <div className='modal-header'>
               <h5 className='modal-title' id='exampleModalToggleLabel2'>

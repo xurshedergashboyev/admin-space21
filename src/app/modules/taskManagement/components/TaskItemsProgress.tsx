@@ -1,6 +1,7 @@
 import bootstrap from 'bootstrap'
 import React, {FC} from 'react'
-import {KTSVG} from '../../../../_metronic/helpers'
+import {KTSVG, toAbsoluteUrl} from '../../../../_metronic/helpers'
+import {OverlayTrigger, Tooltip} from 'react-bootstrap-v5'
 
 type Props = {
   name: string
@@ -26,14 +27,20 @@ const TaskItemsProgress: FC<Props> = ({name, progress, borderColor, handleDelete
           <div className='card-toolbar cursor-pointer'>
             <span className={`badge badge-light-${borderColor} fw-bolder mx-2`}>+</span>
           </div>
-          <div className='card-toolbar cursor-pointer' onClick={handleDelete}>
-            <span className={`badge badge-light-danger fw-bolder`}>
-              <KTSVG
-                path='/media/icons/duotone/General/Trash.svg'
-                className='svg-icon-1hx svg-icon-danger'
-              />
-            </span>
-          </div>
+          <OverlayTrigger
+            key={'delete'}
+            overlay={<Tooltip id={'tooltip-user-name'}>Delete</Tooltip>}
+            placement={'top'}
+          >
+            <div className='card-toolbar cursor-pointer' onClick={handleDelete}>
+              <span className={`badge badge-light-danger fw-bolder`}>
+                <KTSVG
+                  path='/media/icons/duotone/General/Trash.svg'
+                  className='svg-icon-1hx svg-icon-danger'
+                />
+              </span>
+            </div>
+          </OverlayTrigger>
         </div>
       </div>
     </>
