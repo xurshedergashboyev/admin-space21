@@ -150,7 +150,6 @@ const TasksItem: FC<Props> = ({
             <img src={toAbsoluteUrl(icon)} alt='card2' className='p-3' />
           </div>
         </div>
-
         <div className='card-toolbar'>
           <span className={`badge badge-light-${badgeColor} fw-bolder`}>{status}</span>
           <span
