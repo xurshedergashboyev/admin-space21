@@ -197,6 +197,8 @@ const TaskItemsContainer: FC = () => {
                                 className='bi-textarea-resize w-50 fs-1 p-5'
                               />
                             </div>
+
+                            <h3 className='fs-1 my-5'>To do</h3>
                           </div>
                         </div>
                       </div>
