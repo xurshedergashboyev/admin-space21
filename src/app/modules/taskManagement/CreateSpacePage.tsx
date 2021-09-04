@@ -2,6 +2,7 @@ import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 import {TaskItemsContainer} from './components/TaskItemsContainer'
+import {CreatePageCard} from './components/CreatePageCard'
 
 export default function CoursesPage() {
   const profileBreadCrumbs: Array<PageLink> = [
@@ -25,6 +26,7 @@ export default function CoursesPage() {
         <Route path='/crafted/task-management/create-space/'>
           <PageTitle breadcrumbs={profileBreadCrumbs}>Create Space</PageTitle>
           {/*<TaskItemsContainer />*/}
+          <CreatePageCard />
         </Route>
       </Switch>
     </>
