@@ -3,6 +3,9 @@ import {TaskItemsProgress} from './TaskItemsProgress'
 import {TasksItem} from './TasksItem'
 import {TaskUserIcon} from './TaskUserIcon'
 import {data} from './data'
+import {TaskUsers} from './TaskUsers'
+import {OverlayTrigger, Tooltip} from 'react-bootstrap-v5'
+import {KTSVG} from '../../../../_metronic/helpers'
 
 const users1: Array<TaskUserIcon> = [
   {name: 'Khurshed Ergashbaev', avatar: '/media/avatars/150-1.jpg'},
@@ -126,25 +129,79 @@ const TaskItemsContainer: FC = () => {
                   handleDelete={() => handleDelete(board.id)}
                 />
                 {board.items.map((b, i) => (
-                  <TasksItem
-                    onDragOver={(e: any) => dragOver(e)}
-                    onDragStart={(e: any) => dragStart(e, board, b)}
-                    onDrop={(e: any) => drop(e, board, b)}
-                    icon='/media/svg/brand-logos/plurk.svg'
-                    badgeColor='primary'
-                    status='Hot'
-                    statusColor='primary'
-                    title={b.title}
-                    description='CRM App application to HR efficiency'
-                    date='August 30, 2021'
-                    budget='$284,900.00'
-                    progress={'50'}
-                    users={users1}
-                    id={b.id}
-                    handleDelete={() => handleDeleteCard(b.id, i)}
-                    categoryColor={board.color}
-                    category={b.progress}
-                  />
+                  <>
+                    <TasksItem
+                      onDragOver={(e: any) => dragOver(e)}
+                      onDragStart={(e: any) => dragStart(e, board, b)}
+                      onDrop={(e: any) => drop(e, board, b)}
+                      icon='/media/svg/brand-logos/plurk.svg'
+                      badgeColor='primary'
+                      status='Hot'
+                      statusColor='primary'
+                      title={b.title}
+                      description='CRM App application to HR efficiency'
+                      date='August 30, 2021'
+                      budget='$284,900.00'
+                      progress={'50'}
+                      users={users1}
+                      id={b.id}
+                      handleDelete={() => handleDeleteCard(b.id, i)}
+                      categoryColor={board.color}
+                      category={b.progress}
+                    />
+                    <div
+                      className='modal fade'
+                      id='exampleModalToggle2'
+                      aria-hidden='true'
+                      aria-labelledby='exampleModalToggleLabel2'
+                    >
+                      <div className='modal-dialog modal-fullscreen'>
+                        <div className='modal-content'>
+                          <div className='modal-header'>
+                            <h5 className='modal-title' id='exampleModalToggleLabel2'>
+                              {b.title} {b.id}
+                            </h5>
+                            <button className={`btn btn-${board.color} mx-5`}>{b.progress}</button>
+                            <TaskUsers users={users1} />
+                            <OverlayTrigger
+                              key={'hot'}
+                              overlay={<Tooltip id={'tooltip-user-name'}>hot</Tooltip>}
+                              placement={'bottom'}
+                            >
+                              <div className='symbol symbol-35px symbol-circle border-danger border mx-5'>
+                                <KTSVG
+                                  path='/media/icons/duotone/Design/Target.svg'
+                                  className='svg-icon-2hx svg-icon-danger'
+                                />
+                              </div>
+                            </OverlayTrigger>
+                            <button
+                              type='button'
+                              className='btn-close'
+                              data-bs-dismiss='modal'
+                              aria-label='Close'
+                            />
+                          </div>
+                          <div className='modal-body'>
+                            <textarea
+                              className='bi-textarea-resize w-50 fs-1 p-5'
+                              value={b.title}
+                              onChange={(e) => e.target.value}
+                            />
+                            <div id='toolbar' />
+
+                            <div id='editor'>
+                              <textarea
+                                value={'CRM App application to HR efficiency'}
+                                onChange={(e) => e.target.value}
+                                className='bi-textarea-resize w-50 fs-1 p-5'
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
                 ))}
               </div>
             </div>

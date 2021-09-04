@@ -92,58 +92,58 @@ const TasksItem: FC<Props> = ({
       data-bs-toggle='modal'
       data-bs-dismiss='modal'
     >
-      <div
-        className='modal fade'
-        id='exampleModalToggle2'
-        aria-hidden='true'
-        aria-labelledby='exampleModalToggleLabel2'
-      >
-        <div className='modal-dialog modal-fullscreen'>
-          <div className='modal-content'>
-            <div className='modal-header'>
-              <h5 className='modal-title' id='exampleModalToggleLabel2'>
-                {title} {id}
-              </h5>
-              <button className={`btn btn-${categoryColor} mx-5`}>{category}</button>
-              <TaskUsers users={users} />
-              <OverlayTrigger
-                key={status}
-                overlay={<Tooltip id={'tooltip-user-name'}>{status}</Tooltip>}
-                placement={'bottom'}
-              >
-                <div className='symbol symbol-35px symbol-circle border-danger border mx-5'>
-                  <KTSVG
-                    path='/media/icons/duotone/Design/Target.svg'
-                    className='svg-icon-2hx svg-icon-danger'
-                  />
-                </div>
-              </OverlayTrigger>
-              <button
-                type='button'
-                className='btn-close'
-                data-bs-dismiss='modal'
-                aria-label='Close'
-              />
-            </div>
-            <div className='modal-body'>
-              <textarea
-                className='bi-textarea-resize w-50 fs-1 p-5'
-                value={title}
-                onChange={(e) => e.target.value}
-              />
-              <div id='toolbar' />
+      {/*<div*/}
+      {/*  className='modal fade'*/}
+      {/*  id='exampleModalToggle2'*/}
+      {/*  aria-hidden='true'*/}
+      {/*  aria-labelledby='exampleModalToggleLabel2'*/}
+      {/*>*/}
+      {/*  <div className='modal-dialog modal-fullscreen'>*/}
+      {/*    <div className='modal-content'>*/}
+      {/*      <div className='modal-header'>*/}
+      {/*        <h5 className='modal-title' id='exampleModalToggleLabel2'>*/}
+      {/*          {title} {id}*/}
+      {/*        </h5>*/}
+      {/*        <button className={`btn btn-${categoryColor} mx-5`}>{category}</button>*/}
+      {/*        <TaskUsers users={users} />*/}
+      {/*        <OverlayTrigger*/}
+      {/*          key={status}*/}
+      {/*          overlay={<Tooltip id={'tooltip-user-name'}>{status}</Tooltip>}*/}
+      {/*          placement={'bottom'}*/}
+      {/*        >*/}
+      {/*          <div className='symbol symbol-35px symbol-circle border-danger border mx-5'>*/}
+      {/*            <KTSVG*/}
+      {/*              path='/media/icons/duotone/Design/Target.svg'*/}
+      {/*              className='svg-icon-2hx svg-icon-danger'*/}
+      {/*            />*/}
+      {/*          </div>*/}
+      {/*        </OverlayTrigger>*/}
+      {/*        <button*/}
+      {/*          type='button'*/}
+      {/*          className='btn-close'*/}
+      {/*          data-bs-dismiss='modal'*/}
+      {/*          aria-label='Close'*/}
+      {/*        />*/}
+      {/*      </div>*/}
+      {/*      <div className='modal-body'>*/}
+      {/*        <textarea*/}
+      {/*          className='bi-textarea-resize w-50 fs-1 p-5'*/}
+      {/*          value={title}*/}
+      {/*          onChange={(e) => e.target.value}*/}
+      {/*        />*/}
+      {/*        <div id='toolbar' />*/}
 
-              <div id='editor'>
-                <textarea
-                  value={description}
-                  onChange={(e) => e.target.value}
-                  className='bi-textarea-resize w-50 fs-1 p-5'
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*        <div id='editor'>*/}
+      {/*          <textarea*/}
+      {/*            value={description}*/}
+      {/*            onChange={(e) => e.target.value}*/}
+      {/*            className='bi-textarea-resize w-50 fs-1 p-5'*/}
+      {/*          />*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <div className='card-header border-0'>
         <div className='card-title m-0'>
           <div className='symbol symbol-30px w-30px bg-light'>
