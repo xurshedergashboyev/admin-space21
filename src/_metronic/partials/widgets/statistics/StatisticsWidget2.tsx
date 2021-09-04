@@ -22,7 +22,7 @@ const StatisticsWidget2: React.FC<Props> = ({className, title, description, avat
           <span
             className='fw-bold text-muted fs-5'
             dangerouslySetInnerHTML={{__html: description}}
-          ></span>
+          />
         </div>
 
         <img src={toAbsoluteUrl(avatar)} alt='' className='align-self-end h-100px' />
