@@ -197,7 +197,7 @@ const TaskItemsContainer: FC = () => {
                                 className='bi-textarea-resize w-50 fs-1 p-5'
                               />
                             </div>
-                            <div className='d-flex align-items-center'>
+                            <div className='d-flex align-items-center h-50'>
                               <h3 className='fs-1 my-5'>To do</h3>
                               <div className='me-4'>
                                 <select
@@ -209,6 +209,24 @@ const TaskItemsContainer: FC = () => {
                                 >
                                   <option value='Active'>Subtask</option>
                                   <option value='Approved'>Checklist</option>
+                                </select>
+                              </div>
+                            </div>
+                            <input className='form-control input-group' />
+                            <div className='d-flex align-items-center h-25'>
+                              <h3 className='fs-1 my-5'>Attach files</h3>
+                              <div className='me-4'>
+                                <select
+                                  name='status'
+                                  data-control='select2'
+                                  data-hide-search='true'
+                                  className='form-select form-select-sm form-select-white w-125px border border-danger border-active mx-5 form-select-border-color-danger'
+                                  defaultValue='Active'
+                                >
+                                  <option value='Active'>Dropbox</option>
+                                  <option value='Approved'>File</option>
+                                  <option value='Approved'>New Doc</option>
+                                  <option value='Approved'>OneDrive</option>
                                 </select>
                               </div>
                             </div>
