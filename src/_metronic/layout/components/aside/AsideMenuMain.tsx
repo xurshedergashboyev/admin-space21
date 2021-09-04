@@ -94,12 +94,19 @@ export function AsideMenuMain() {
         title='Finance'
         fontIcon='bi-app-indicator'
       />
-      <AsideMenuItem
+      <AsideMenuItemWithSub
         to='/crafted/task-management/overview/'
-        icon='/media/icons/duotone/Files/File.svg'
         title='Task Management'
-        fontIcon='bi-app-indicator'
-      />
+        icon='/media/icons/duotone/Files/File.svg'
+        fontIcon='bi-person'
+      >
+        <AsideMenuItem to='/crafted/task-management/overview/' title='Overview' hasBullet={true} />
+        <AsideMenuItem
+          to='/crafted/task-management/create-space'
+          title='Create Space'
+          hasBullet={true}
+        />
+      </AsideMenuItemWithSub>
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/error'*/}
       {/*  title='Errors'*/}

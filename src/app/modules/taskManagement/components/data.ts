@@ -14,7 +14,7 @@ export const data = [
     title: 'Doing',
     color: 'primary',
     items: [
-      {id: 4, title: 'Abdurshid', progress: 'Doing'},
+      {id: 4, title: 'Abdurashid', progress: 'Doing'},
       {id: 5, title: 'Bye Bye', progress: 'Doing'},
     ],
   },
