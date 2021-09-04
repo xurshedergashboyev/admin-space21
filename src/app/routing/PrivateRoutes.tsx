@@ -12,13 +12,18 @@ export function PrivateRoutes() {
   const WidgetsPage = lazy(() => import('../modules/widgets/WidgetsPage'))
   const ChatPage = lazy(() => import('../modules/apps/chat/ChatPage'))
   const CoursesPage = lazy(() => import('../modules/courses/CoursesPage'))
-  const StudentOverviewPage = lazy(() => import('../modules/accounts/components/StudentOverview/StudentOverviewPage'))
-  const CoursesInfoPage = lazy(() => import('../modules/courses/components/CoursesData'));
-  const TeacherInfoPage = lazy(() => import('../modules/accounts/components/TeacherOverview/TeacherOverviewPage'))
+  const StudentOverviewPage = lazy(
+    () => import('../modules/accounts/components/StudentOverview/StudentOverviewPage')
+  )
+  const CoursesInfoPage = lazy(() => import('../modules/courses/components/CoursesData'))
+  const TeacherInfoPage = lazy(
+    () => import('../modules/accounts/components/TeacherOverview/TeacherOverviewPage')
+  )
   const TeachersPage = lazy(() => import('../modules/accounts/components/TeachersAccountPage'))
-  const LeadsPage = lazy(() => import('../modules/leads/LeadsPage'));
-  const FinancePage = lazy(() => import('../modules/finance/FinancePage'));
-  const TaskManagementPage = lazy(() => import('../modules/taskManagement/TaskManagementPage'));
+  const LeadsPage = lazy(() => import('../modules/leads/LeadsPage'))
+  const FinancePage = lazy(() => import('../modules/finance/FinancePage'))
+  const TaskManagementPage = lazy(() => import('../modules/taskManagement/TaskManagementPage'))
+  const CreateSpacePage = lazy(() => import('../modules/taskManagement/TaskManagementPage'))
 
   return (
     <Suspense fallback={<FallbackView />}>
@@ -37,6 +42,7 @@ export function PrivateRoutes() {
         <Route path='/crafted/leads/overview' component={LeadsPage} />
         <Route path='/crafted/courses' component={CoursesPage} />
         <Route path='/crafted/task-management' component={TaskManagementPage} />
+        <Route path='/crafted/task-management' component={CreateSpacePage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
         <Redirect from='/auth' to='/dashboard' />
