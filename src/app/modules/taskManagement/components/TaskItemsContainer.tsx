@@ -199,6 +199,18 @@ const TaskItemsContainer: FC = () => {
                             </div>
                             <div className='d-flex align-items-center'>
                               <h3 className='fs-1 my-5'>To do</h3>
+                              <div className='me-4'>
+                                <select
+                                  name='status'
+                                  data-control='select2'
+                                  data-hide-search='true'
+                                  className='form-select form-select-sm form-select-white w-125px border border-danger border-active mx-5 form-select-border-color-danger'
+                                  defaultValue='Active'
+                                >
+                                  <option value='Active'>Subtask</option>
+                                  <option value='Approved'>Checklist</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
