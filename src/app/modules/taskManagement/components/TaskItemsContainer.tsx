@@ -10,7 +10,7 @@ import {KTSVG} from '../../../../_metronic/helpers'
 const users1: Array<TaskUserIcon> = [
   {name: 'Khurshed Ergashbaev', avatar: '/media/avatars/150-1.jpg'},
   {name: 'Muhammad Zakirov', avatar: '/media/avatars/150-2.jpg'},
-  {name: 'Maraim Tukhtasunov', initials: 'S', color: 'primary'},
+  {name: 'Maraim Tukhtasunov', initials: 'P', color: 'primary'},
 ]
 
 const TaskItemsContainer: FC = () => {
