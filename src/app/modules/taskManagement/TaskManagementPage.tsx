@@ -6,8 +6,8 @@ import {TaskItemsContainer} from './components/TaskItemsContainer'
 export default function CoursesPage() {
   const profileBreadCrumbs: Array<PageLink> = [
     {
-      title: 'Task Management',
-      path: '/crafted/task-management/overview',
+      title: 'Create Space',
+      path: '/crafted/task-management/',
       isSeparator: false,
       isActive: false,
     },

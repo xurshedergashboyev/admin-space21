@@ -7,7 +7,7 @@ export default function CoursesPage() {
   const profileBreadCrumbs: Array<PageLink> = [
     {
       title: 'Task Management',
-      path: '/crafted/task-management/overview',
+      path: '/crafted/task-management/create-space',
       isSeparator: false,
       isActive: false,
     },
@@ -22,9 +22,9 @@ export default function CoursesPage() {
   return (
     <>
       <Switch>
-        <Route path='/crafted/task-management/overview'>
-          <PageTitle breadcrumbs={profileBreadCrumbs}>Task Management</PageTitle>
-          <TaskItemsContainer />
+        <Route path='/crafted/task-management/create-space/'>
+          <PageTitle breadcrumbs={profileBreadCrumbs}>Create Space</PageTitle>
+          {/*<TaskItemsContainer />*/}
         </Route>
       </Switch>
     </>

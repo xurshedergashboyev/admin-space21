@@ -23,7 +23,7 @@ export function PrivateRoutes() {
   const LeadsPage = lazy(() => import('../modules/leads/LeadsPage'))
   const FinancePage = lazy(() => import('../modules/finance/FinancePage'))
   const TaskManagementPage = lazy(() => import('../modules/taskManagement/TaskManagementPage'))
-  const CreateSpacePage = lazy(() => import('../modules/taskManagement/TaskManagementPage'))
+  const CreateSpacePage = lazy(() => import('../modules/taskManagement/CreateSpacePage'))
 
   return (
     <Suspense fallback={<FallbackView />}>
@@ -41,8 +41,8 @@ export function PrivateRoutes() {
         <Route path='/crafted/finance/overview' component={FinancePage} />
         <Route path='/crafted/leads/overview' component={LeadsPage} />
         <Route path='/crafted/courses' component={CoursesPage} />
-        <Route path='/crafted/task-management' component={TaskManagementPage} />
-        <Route path='/crafted/task-management' component={CreateSpacePage} />
+        <Route path='/crafted/task-management/overview' component={TaskManagementPage} />
+        <Route path='/crafted/task-management/create-space' component={CreateSpacePage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
         <Redirect from='/auth' to='/dashboard' />
