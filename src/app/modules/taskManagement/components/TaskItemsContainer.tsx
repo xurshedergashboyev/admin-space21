@@ -18,6 +18,22 @@ const TaskItemsContainer: FC = () => {
   const [currentBoard, setCurrentBoard] = useState(null)
   const [currentItem, setCurrentItem] = useState(null)
 
+  // const [subtasks, setSubtask] = useState([])
+  // const [taskInput, setTaskInput] = useState('')
+  // const handleTaskSubmit = (e: any) => {
+  //   e.preventDefault()
+  //   addTask(taskInput)
+  //   setTaskInput('')
+  // }
+  // const addTask = (userInput: string) => {
+  //   let copy = [...subtasks]
+  //   setSubtask(copy)
+  // }
+  //
+  // const handleTaskChange = (e: any) => {
+  //   setTaskInput(e.currentTarget.value)
+  // }
+
   const dragOver = (e: any) => {
     e.preventDefault()
     if (e.target.className == 'item') {
@@ -113,12 +129,12 @@ const TaskItemsContainer: FC = () => {
           </a>
         </div>
       </div>
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-around overflow-scroll'>
         {boards.map((board) => (
           <>
-            <div className='row g-6 g-xl-9'>
+            <div className='row g-6 g-xl-9 w-300px'>
               <div
-                className='col-md-10 col-xl-10'
+                className='col-md-11 col-xl-11 col-sm-2'
                 onDragOver={(e) => dragOver(e)}
                 onDrop={(e) => dropBoard(e, board)}
               >
@@ -183,37 +199,45 @@ const TaskItemsContainer: FC = () => {
                             />
                           </div>
                           <div className='modal-body'>
-                            <textarea
-                              className='bi-textarea-resize w-50 fs-1 p-5'
-                              value={b.title}
-                              onChange={(e) => e.target.value}
-                            />
-                            <div id='toolbar' />
+                            <div className='d-flex flex-column my-5'>
+                              <textarea
+                                className='bi-textarea-resize w-50 fs-1 p-5'
+                                value={b.title}
+                                onChange={(e) => e.target.value}
+                              />
+                              {/*<div id='toolbar' />*/}
 
-                            <div id='editor'>
+                              {/*<div id='editor'>*/}
+                              <h3 className='fs-1 my-5'>Desc</h3>
                               <textarea
                                 value={'CRM App application to HR efficiency'}
                                 onChange={(e) => e.target.value}
                                 className='bi-textarea-resize w-50 fs-1 p-5'
                               />
                             </div>
-                            <div className='d-flex align-items-center h-50'>
-                              <h3 className='fs-1 my-5'>To do</h3>
-                              <div className='me-4'>
-                                <select
-                                  name='status'
-                                  data-control='select2'
-                                  data-hide-search='true'
-                                  className='form-select form-select-sm form-select-white w-125px border border-danger border-active mx-5 form-select-border-color-danger'
-                                  defaultValue='Active'
-                                >
-                                  <option value='Active'>Subtask</option>
-                                  <option value='Approved'>Checklist</option>
-                                </select>
+                            {/*</div>*/}
+                            <div className='d-flex flex-column  min-h-25'>
+                              <div className='d-flex align-items-center'>
+                                <h3 className='fs-1 my-5'>To do</h3>
+                                <div className='me-4'>
+                                  <select
+                                    name='status'
+                                    data-control='select2'
+                                    data-hide-search='true'
+                                    className='form-select form-select-sm form-select-white w-125px border border-danger border-active mx-5 form-select-border-color-danger'
+                                    defaultValue='Active'
+                                  >
+                                    <option value='Active'>Subtask</option>
+                                    <option value='Approved'>Checklist</option>
+                                  </select>
+                                </div>
                               </div>
+                              <label htmlFor='subtasks' className='form-label'>
+                                Subtasks
+                              </label>
+                              <input name='subtasks' className='form-control input-group w-50' />
                             </div>
-                            <input className='form-control input-group' />
-                            <div className='d-flex align-items-center h-25'>
+                            <div className='d-flex align-items-center min-h-10'>
                               <h3 className='fs-1 my-5'>Attach files</h3>
                               <div className='me-4'>
                                 <select
