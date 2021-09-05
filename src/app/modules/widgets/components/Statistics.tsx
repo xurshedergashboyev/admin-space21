@@ -87,7 +87,6 @@ const Statistics: FC = () => {
             change='+100'
           />
         </div>
-
         <div className='col-xl-4'>
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
