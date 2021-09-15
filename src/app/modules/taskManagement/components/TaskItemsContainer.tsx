@@ -79,6 +79,8 @@ const TaskItemsContainer: FC = () => {
 
   const handleDeleteCard = (id: number, i: number) => {
     const remove = boards[i]?.items.filter((todo) => todo.id !== id)
+    // @ts-ignore
+    setCurrentItem(remove)
   }
   // @ts-ignore
   return (
