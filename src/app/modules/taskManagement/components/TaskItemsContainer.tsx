@@ -18,22 +18,6 @@ const TaskItemsContainer: FC = () => {
   const [currentBoard, setCurrentBoard] = useState(null)
   const [currentItem, setCurrentItem] = useState(null)
 
-  // const [subtasks, setSubtask] = useState([])
-  // const [taskInput, setTaskInput] = useState('')
-  // const handleTaskSubmit = (e: any) => {
-  //   e.preventDefault()
-  //   addTask(taskInput)
-  //   setTaskInput('')
-  // }
-  // const addTask = (userInput: string) => {
-  //   let copy = [...subtasks]
-  //   setSubtask(copy)
-  // }
-  //
-  // const handleTaskChange = (e: any) => {
-  //   setTaskInput(e.currentTarget.value)
-  // }
-
   const dragOver = (e: any) => {
     e.preventDefault()
     if (e.target.className == 'item') {
