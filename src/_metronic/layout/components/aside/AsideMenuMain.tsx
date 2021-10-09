@@ -107,6 +107,13 @@ export function AsideMenuMain() {
           hasBullet={true}
         />
       </AsideMenuItemWithSub>
+      <AsideMenuItem
+        to='/crafted/pulse'
+        icon='/media/icons/duotone/Interface/Settings-02.svg'
+        title='Pulse'
+        fontIcon='bi-layers'
+      />
+
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/error'*/}
       {/*  title='Errors'*/}
