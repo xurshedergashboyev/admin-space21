@@ -11,8 +11,8 @@ const PulseItems: FC = () => {
     {name: 'Maraim Tukhtasunov', initials: 'P', color: 'primary'},
   ]
   return (
-    <div className={'d-flex justify-content-center flex-column col-8'}>
-      <div className={'d-flex flex-column col-12'}>
+    <div className={'d-flex justify-content-center m-auto col-8'}>
+      <div className={'col-12'}>
         <PulseChart className={'col-12'} />
         <div className={'d-flex justify-content-between my-15 align-items-center'}>
           <h1>October 9, 2021</h1>
