@@ -1,6 +1,7 @@
 import React, {FC} from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
+import DocsItem from './DocsItem'
 
 const Pulse: FC = () => {
   const profileBreadCrumbs: Array<PageLink> = [
@@ -24,6 +25,7 @@ const Pulse: FC = () => {
         <Route path='/crafted/docs'>
           <PageTitle breadcrumbs={profileBreadCrumbs}>Docs</PageTitle>
           {/*<TaskItemsContainer />*/}
+          <DocsItem />
         </Route>
       </Switch>
     </>
