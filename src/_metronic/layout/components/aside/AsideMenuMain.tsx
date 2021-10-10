@@ -119,6 +119,12 @@ export function AsideMenuMain() {
         title='Docs'
         fontIcon='bi-layers'
       />
+      <AsideMenuItem
+        to='/crafted/integration'
+        icon='/media/icons/duotone/Interface/Settings-02.svg'
+        title='Integratoin'
+        fontIcon='bi-layers'
+      />
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/error'*/}
       {/*  title='Errors'*/}
