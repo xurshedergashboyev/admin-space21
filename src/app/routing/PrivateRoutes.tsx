@@ -25,6 +25,7 @@ export function PrivateRoutes() {
   const TaskManagementPage = lazy(() => import('../modules/taskManagement/TaskManagementPage'))
   const CreateSpacePage = lazy(() => import('../modules/taskManagement/CreateSpacePage'))
   const Pulse = lazy(() => import('../modules/pulse/Pulse'))
+  const Docs = lazy(() => import('../modules/docs'))
 
   return (
     <Suspense fallback={<FallbackView />}>
@@ -45,6 +46,7 @@ export function PrivateRoutes() {
         <Route path='/crafted/task-management/overview' component={TaskManagementPage} />
         <Route path='/crafted/task-management/create-space' component={CreateSpacePage} />
         <Route path={'/crafted/pulse'} component={Pulse} />
+        <Route path={'/crafted/docs'} component={Docs} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
         <Redirect from='/auth' to='/dashboard' />

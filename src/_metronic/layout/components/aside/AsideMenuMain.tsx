@@ -113,7 +113,12 @@ export function AsideMenuMain() {
         title='Pulse'
         fontIcon='bi-layers'
       />
-
+      <AsideMenuItem
+        to='/crafted/docs'
+        icon='/media/icons/duotone/Interface/Settings-02.svg'
+        title='Docs'
+        fontIcon='bi-layers'
+      />
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/error'*/}
       {/*  title='Errors'*/}
