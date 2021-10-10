@@ -1,6 +1,7 @@
 import React, {FC} from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
+import IntegrationItem from './IntegrationItem'
 
 const Pulse: FC = () => {
   const profileBreadCrumbs: Array<PageLink> = [
@@ -24,6 +25,7 @@ const Pulse: FC = () => {
         <Route path='/crafted/integration'>
           <PageTitle breadcrumbs={profileBreadCrumbs}>Integration</PageTitle>
           {/*<TaskItemsContainer />*/}
+          <IntegrationItem />
         </Route>
       </Switch>
     </>
